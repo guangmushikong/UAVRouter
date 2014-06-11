@@ -31,11 +31,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->editCamWidth->setReadOnly(true);
     ui->editPixelsize->setReadOnly(true);
 
-    /*宽10328像素高7760
-三水 21:43:22
-好，我记下，换了个新电脑
-葛忆宁 21:43:28
-焦距55mm 像元5.2um */
+    //load the default Camera parameters
     QString focus("55");
     QString h("7760");
     QString w("10328");
@@ -99,6 +95,7 @@ void MainWindow::on_toolButtonAirport_clicked()
 void MainWindow::on_toolButton_Region_clicked()
 {
 
+    m_flight_param.ClearFlightRegions();
 
     if(ui->radioSinglePolygon->isChecked())
     {
@@ -106,6 +103,9 @@ void MainWindow::on_toolButton_Region_clicked()
                             ".",
                             "KML (*.kml *.KML)"
                             );
+
+        m_flight_param.FightRegion=COGRGeometryFileReader::GetFirstOGRGeometryFromFile(s.toStdString());
+
         if(s.length() == 0)
         {
             QMessageBox::information(NULL, tr("Path Error"), tr("You didn't select any files."));
@@ -135,6 +135,9 @@ void MainWindow::on_toolButton_Region_clicked()
             for(int i=0; i< slist.size(); i++)
             {
                 pLog->logging(slist.at(i).toStdString());
+
+                m_flight_param.AddFlightRegionGeometry(
+                            COGRGeometryFileReader::GetFirstOGRGeometryFromFile(slist.at(i).toStdString()));
             }
 
         }
@@ -171,7 +174,7 @@ void MainWindow::on_cmdDesignStart_clicked()
     m_flight_param.overlap=ui->editoverlaprate->text().toDouble()/100.0;
     m_flight_param.overlap_crossStrip=ui->editOverlapSide->text().toDouble()/100.0;
     m_flight_param.RedudantBaselines=ui->editRedudantBaseline->text().toInt();
-    m_flight_param.FightRegion=COGRGeometryFileReader::GetFirstOGRGeometryFromFile(ui->textRegionFile->toPlainText().toStdString());
+
 
     //m_flight_param.OutputFilePathname=ui->textOutputFile->toPlainText().toStdString();
 
@@ -189,6 +192,9 @@ void MainWindow::on_cmdDesignStart_clicked()
     route_desinger->AddOutPutFileName(outputGST.toStdString());
     route_desinger->PerformRouteDesign();
     route_desinger->OutputRouteFile();
+
+    delete route_desinger;
+    route_desinger=NULL;
 
 }
 
@@ -249,7 +255,8 @@ void MainWindow::on_btn_unittest_clicked()
     route_desinger->PerformRouteDesign();
     route_desinger->OutputRouteFile();
 
-
+    delete route_desinger;
+    route_desinger=NULL;
 
 
 

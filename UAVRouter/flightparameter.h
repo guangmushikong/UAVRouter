@@ -8,8 +8,10 @@ using namespace Gomo::PhotoCamera;
 
 #include <string>
 #include <memory>
+#include <vector>
 
 using std::string;
+using std::vector;
 
 
 namespace Gomo {
@@ -55,16 +57,16 @@ namespace Gomo {
 
         struct FlightParameter
         {
-            enum REGION_TYPE
-            {
-                REGION_SINGLE_POLYGON,
+//            enum REGION_TYPE
+//            {
+//                REGION_SINGLE_POLYGON,
 
-                REGION_MULIT_POLYGON
-            };
+//                REGION_MULIT_POLYGON
+//            };
 
 
-        protected:
-            REGION_TYPE m_region_type;
+//        protected:
+//            REGION_TYPE m_region_type;
 
         public:
             FlightParameter();
@@ -80,25 +82,42 @@ namespace Gomo {
 
             unsigned int RedudantBaselines;         // 冗余基线
 
-            std::auto_ptr<OGRGeometry> FightRegion;//摄区, 面状或者线状
-            //OGRPoint   AirportLocation;           // 机场中心,in WGS84
-            Airport airport;
+            std::auto_ptr<OGRGeometry> FightRegion; // 单摄区, 面状或者线状
+
+
+
+            Airport airport;                        // 机场中心,in WGS84
+
+        protected:
+            std::vector< std::auto_ptr<OGRGeometry> > multiFlightRegionGeometries;// 多摄区, 面状或者线状
 
         public:
-            inline FlightParameter&
-                operator=(const FlightParameter & rs){
-                     CameraInfo         = rs.CameraInfo;
-                     AverageElevation   = rs.AverageElevation;
-                     FightHeight        = rs.FightHeight;
-                     GuidanceEntrancePointsDistance = rs.GuidanceEntrancePointsDistance;
-                     overlap            = rs.overlap;
-                     overlap_crossStrip = rs.overlap_crossStrip;
-                     RedudantBaselines  = rs.RedudantBaselines;
-                     FightRegion        = std::auto_ptr<OGRGeometry>(rs.FightRegion.get()->clone());
-                     airport            = rs.airport;
-                     return *this;
-                 };
+            FlightParameter& operator=(const FlightParameter & rs);
 
+            inline void ClearFlightRegions()
+            {
+                multiFlightRegionGeometries.clear();
+            };
+
+            size_t AddFlightRegionGeometry(std::auto_ptr<OGRGeometry>);
+
+            inline std::auto_ptr<OGRGeometry> GetFlightRegionGeometry(int seq)
+            {
+                if (seq >=0 && seq< GetRegionCount())
+                {
+                    return std::auto_ptr<OGRGeometry>(multiFlightRegionGeometries[seq].get());
+                }
+                else
+                {
+                    return std::auto_ptr<OGRGeometry>(NULL);
+                }
+
+            };
+
+            inline size_t GetRegionCount()
+            {
+                return multiFlightRegionGeometries.size();
+            };
         };
 
 

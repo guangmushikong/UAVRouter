@@ -124,7 +124,7 @@ bool PolygonAreaFlightRouteDesign::CalculatePolygonOrientaion(const Point2DArray
                     angle = angle + _PI_ / 2.0;
             }
 
-            angle -= _PI_ / 4.0 ;
+            angle -= _PI_ / 4.0 ;//added by wangmiao
 
         }
 

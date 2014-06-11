@@ -32,7 +32,8 @@ SOURCES += main.cpp\
     uavrouteoutputer.cpp \
     geomertyconvertor.cpp \
     UAVRoute.cpp \
-    coordinateoutput.cpp
+    coordinateoutput.cpp \
+    multiregiondesigner.cpp
 
 HEADERS  += mainwindow.h \
     flightroutedesign.h \
@@ -47,6 +48,7 @@ HEADERS  += mainwindow.h \
     UAVRoute.h \
     uavrouteoutputer.h \
     geomertyconvertor.h \
-    coordinateoutput.h
+    coordinateoutput.h \
+    multiregiondesigner.h
 
 FORMS    += mainwindow.ui

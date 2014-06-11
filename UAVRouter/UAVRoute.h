@@ -383,6 +383,8 @@ namespace FlightRoute {
 
         UAVFlightStatisticInfo __flight_statistic;
 
+    public:
+        UAVFLIGHT_ROUTE_DESIGN& operator=(const UAVFLIGHT_ROUTE_DESIGN & rs);
 
     }UAVRouteDesign;
 

@@ -235,3 +235,23 @@ void FlightRouteDesign::AddOutPutFileName(std::string outputfilename)
     m_output_files.push_back(outputfilename);
 
 }
+
+
+UAVFlightPoint FlightRouteDesign::GetLastFlightPoint()
+{
+    return m_route_design_WGS84.__flight_point[m_route_design_WGS84.__flight_point.size()-1];
+}
+
+void FlightRouteDesign::ShareDesign(const FlightRouteDesign & src,bool append)
+{
+    if( append == false) //means just copy
+    {
+        m_route_design_WGS84 = src.m_route_design_WGS84;
+    }
+    else
+    {
+        ///to do
+
+
+    }
+}

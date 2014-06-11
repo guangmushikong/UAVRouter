@@ -26,6 +26,10 @@ public:
 
     void AddOutPutFileName(std::string);
 
+    //for convenience of multi-region routing connection,
+    //provide the last flight point of the current region as the airport of next region
+    UAVFlightPoint GetLastFlightPoint();
+
 
 protected:
     vector<std::string> m_output_files;
@@ -43,6 +47,10 @@ protected:
                               enumFlightPointType ptType,
                               double longitude,
                               double latitude )=0;
+
+    //for multi-region data share
+    void ShareDesign(const FlightRouteDesign & src,bool append=false);
+
 
 protected:
     FlightParameter m_parameter;
