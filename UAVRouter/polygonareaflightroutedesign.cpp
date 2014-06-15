@@ -114,6 +114,8 @@ bool PolygonAreaFlightRouteDesign::CalculatePolygonOrientaion(const Point2DArray
             {
                 if (angle < 0.0)
                     angle = angle + _PI_ / 2.0;
+
+                angle -= _PI_ / 4.0;//added by wangmiao
             }
 
             if (covXY < 0.0)
@@ -122,9 +124,11 @@ bool PolygonAreaFlightRouteDesign::CalculatePolygonOrientaion(const Point2DArray
                     angle = angle + _PI_;
                 else
                     angle = angle + _PI_ / 2.0;
+
+                angle += _PI_ / 4.0 ;//added by wangmiao
             }
 
-            angle -= _PI_ / 4.0 ;//added by wangmiao
+
 
         }
 

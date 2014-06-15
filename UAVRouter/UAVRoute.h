@@ -385,6 +385,7 @@ namespace FlightRoute {
 
     public:
         UAVFLIGHT_ROUTE_DESIGN& operator=(const UAVFLIGHT_ROUTE_DESIGN & rs);
+        UAVFLIGHT_ROUTE_DESIGN& operator +=(const UAVFLIGHT_ROUTE_DESIGN & rs);
 
     }UAVRouteDesign;
 

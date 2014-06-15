@@ -7,7 +7,7 @@ namespace Gomo {
 
     FlightParameter::FlightParameter()
     {
-
+		FightRegion = std::auto_ptr<OGRGeometry>(NULL);
         multiFlightRegionGeometries.clear();
     }
 
@@ -21,9 +21,17 @@ namespace Gomo {
              GuidanceEntrancePointsDistance = rs.GuidanceEntrancePointsDistance;
              overlap            = rs.overlap;
              overlap_crossStrip = rs.overlap_crossStrip;
-             RedudantBaselines  = rs.RedudantBaselines;
-             FightRegion        = std::auto_ptr<OGRGeometry>(rs.FightRegion.get()->clone());
+             RedudantBaselines  = rs.RedudantBaselines;             
              airport            = rs.airport;
+
+			 if( rs.FightRegion.get()==NULL)
+			 {
+				 FightRegion = std::auto_ptr<OGRGeometry>(NULL);
+			 }
+			 else
+			 {
+				 FightRegion = std::auto_ptr<OGRGeometry>(rs.FightRegion.get()->clone());
+			 }			 
 
              multiFlightRegionGeometries.clear();
              std::vector<std::auto_ptr<OGRGeometry>>::const_iterator it_reg = rs.multiFlightRegionGeometries.begin();

@@ -186,10 +186,14 @@ void MainWindow::on_cmdDesignStart_clicked()
     QString outputKML = outputbasename +".kml";
     QString outputGST = outputbasename +".gst";
 
+    qDebug("route_desinger->AddOutPutFileName(outputBinary.toStdString());()");
+
+
     route_desinger->AddOutPutFileName(outputBinary.toStdString());
     route_desinger->AddOutPutFileName(outputText.toStdString());
     route_desinger->AddOutPutFileName(outputKML.toStdString());
     route_desinger->AddOutPutFileName(outputGST.toStdString());
+    qDebug("route_desinger->PerformRouteDesign()");
     route_desinger->PerformRouteDesign();
     route_desinger->OutputRouteFile();
 
@@ -213,11 +217,10 @@ void MainWindow::on_toolButtonOutputSelect_clicked()
 
 void MainWindow::on_btn_unittest_clicked()
 {
-
     DigitalCameraInfo cam;
-    cam.f= 50.678; //mm
-    cam.width = 20000;
-    cam.height = 10000;
+    cam.f= 55; //mm
+    cam.width = 10328;
+    cam.height = 7760;
     cam.pixelsize = 0.005; //mm
 
     m_flight_param.CameraInfo=cam;
@@ -227,10 +230,10 @@ void MainWindow::on_btn_unittest_clicked()
     m_flight_param.overlap=0.6;
     m_flight_param.overlap_crossStrip=0.2;
     m_flight_param.RedudantBaselines=2;
-    std::string region_filename("G:/Gomo/Data/0209/area.kml");
+    std::string region_filename("G:/Gomo/Data/0615/0615_testregion2.kml");
     m_flight_param.FightRegion=COGRGeometryFileReader::GetFirstOGRGeometryFromFile(region_filename);
 
-    std::string airport_filename("G:/Gomo/Data/0209/bjairport.kml");
+    std::string airport_filename("G:/Gomo/Data/0615/airport_0615.kml");
     std::auto_ptr<OGRGeometry> airport_geom_ptr =COGRGeometryFileReader::GetFirstOGRPointFromFile(airport_filename);
     OGRPoint * pPt=dynamic_cast<OGRPoint *>(airport_geom_ptr.get());
     OGRPoint airportLoc(pPt->getX(), pPt->getY());
@@ -240,7 +243,7 @@ void MainWindow::on_btn_unittest_clicked()
     m_flight_param.airport.SetName(fiairport.baseName().toStdString());
 
     FlightRouteDesign * route_desinger = DesignTaskFactory::CreateFlightRouteDeigner(m_flight_param);
-    QString output("G:/Gomo/Data/0420/testoutput.txt");
+    QString output("G:/Gomo/Data/0615/output/testmoshikou_single_45deg.txt");
     QFileInfo fi(output);
     QString outputbasename=fi.absolutePath()+"/"+fi.baseName();
     QString outputBinary = outputbasename +".bht";

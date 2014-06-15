@@ -564,6 +564,33 @@ namespace FlightRoute {
         __flight_statistic.__MBR_Area           = rs.__flight_statistic.__MBR_Area;
         __flight_statistic.__photo_flight_course_chainage = rs.__flight_statistic.__photo_flight_course_chainage;
 
+        return *this;
+
+    }
+
+
+    UAVFLIGHT_ROUTE_DESIGN& UAVFLIGHT_ROUTE_DESIGN::
+            operator+=(const UAVFLIGHT_ROUTE_DESIGN & rs)
+    {
+        //1.expand the bounding box of UAVROUTE_HEADER
+        __header.max_latitude       = (rs.__header.max_latitude     > __header.max_latitude)    ? rs.__header.max_latitude  : __header.max_latitude     ;
+        __header.max_longitude      = (rs.__header.max_longitude    > __header.max_longitude)   ? rs.__header.max_longitude : __header.max_longitude    ;
+        __header.min_latitude       = (rs.__header.min_latitude     < __header.min_latitude )   ? rs.__header.min_latitude  : __header.min_latitude     ;
+        __header.min_longitude      = (rs.__header.min_longitude    < __header.min_longitude)   ? rs.__header.min_longitude : __header.min_longitude    ;
+
+        //2. std::vector< UAVFlightPoint > __flight_point;
+        __flight_point.insert(__flight_point.end(),rs.__flight_point.begin(),rs.__flight_point.end());
+
+        //3. expand the UAVFlightStatisticInfo __flight_statistic;
+        __flight_statistic.__count_exposures    += rs.__flight_statistic.__count_exposures;
+        __flight_statistic.__count_strips       += rs.__flight_statistic.__count_strips;
+        __flight_statistic.__flight_region_area += rs.__flight_statistic.__flight_region_area;
+        __flight_statistic.__MBR_Area           += rs.__flight_statistic.__MBR_Area;
+        __flight_statistic.__photo_flight_course_chainage += rs.__flight_statistic.__photo_flight_course_chainage;
+
+        return *this;
+
+
     }
 
 }

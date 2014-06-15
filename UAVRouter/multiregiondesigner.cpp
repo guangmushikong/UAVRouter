@@ -11,15 +11,10 @@
 
     }
 
-
-
 //    void MultiRegionDesigner:: SetFightParameters(FlightParameter & parameter )
 //    {
 
 //    }
-
-
-
 
     void MultiRegionDesigner::PerformRouteDesign()
     {
@@ -56,11 +51,11 @@
                 ///to do , copy design result from single_reg_desinger to current class, ie MultiRegionDesigner
                 if( i==0)
                 {
-                    ShareDesign(single_reg_desinger);
+                    ShareDesign(*single_reg_desinger);
                 }
                 else
                 {
-                    ShareDesign(single_reg_desinger,true);
+                    ShareDesign(*single_reg_desinger,true);
                 }
 
 

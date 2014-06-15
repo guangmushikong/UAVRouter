@@ -105,7 +105,7 @@ namespace Gomo {
             {
                 if (seq >=0 && seq< GetRegionCount())
                 {
-                    return std::auto_ptr<OGRGeometry>(multiFlightRegionGeometries[seq].get());
+                    return std::auto_ptr<OGRGeometry>(multiFlightRegionGeometries[seq].get()->clone());
                 }
                 else
                 {

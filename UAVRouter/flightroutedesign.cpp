@@ -14,6 +14,7 @@ using std::ostringstream;
 
 FlightRouteDesign::FlightRouteDesign()
 {
+    m_FightRegion_Gauss = std::auto_ptr<OGRGeometry>(NULL);//add this for the auto destructor, otherwise the m_FightRegion_Gauss would free the random memory
 
     InitialSpatialReference();
 }
@@ -22,6 +23,8 @@ FlightRouteDesign::FlightRouteDesign()
 FlightRouteDesign::FlightRouteDesign(const FlightParameter & parameter)
 {
     m_parameter=parameter;
+
+    m_FightRegion_Gauss = std::auto_ptr<OGRGeometry>(NULL);//add this for the auto destructor, otherwise the m_FightRegion_Gauss would free the random memory
 
     ScaleCamera2Ground();
 
@@ -250,8 +253,8 @@ void FlightRouteDesign::ShareDesign(const FlightRouteDesign & src,bool append)
     }
     else
     {
-        ///to do
-
+        //expand the first design by the second design
+        m_route_design_WGS84 += src.m_route_design_WGS84;
 
     }
 }
