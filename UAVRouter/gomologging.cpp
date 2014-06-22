@@ -21,4 +21,5 @@ GomoLogging* GomoLogging::GetInstancePtr()
 void  GomoLogging::logging(std::string line)
 {
     m_logfile.write(line.c_str(),line.length());
+    m_logfile.write("\n");
 }

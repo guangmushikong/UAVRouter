@@ -24,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
 
-    //ui->btn_unittest->hide();
+    ui->btn_unittest->hide();
 
     ui->editFocus->setReadOnly(true);
     ui->editCamHeight->setReadOnly(true);
@@ -130,14 +130,18 @@ void MainWindow::on_toolButton_Region_clicked()
 
         if(slist.size()>0)
         {
+            slist.sort(Qt::CaseInsensitive);//important to make the file list in dictionary order
+
             GomoLogging * pLog = GomoLogging::GetInstancePtr();
 
             for(int i=0; i< slist.size(); i++)
             {
-                pLog->logging(slist.at(i).toStdString());
+                std::string regionfilepath = slist.at(i).toStdString();
+
+                pLog->logging(regionfilepath);
 
                 m_flight_param.AddFlightRegionGeometry(
-                            COGRGeometryFileReader::GetFirstOGRGeometryFromFile(slist.at(i).toStdString()));
+                            COGRGeometryFileReader::GetFirstOGRGeometryFromFile(regionfilepath));
             }
 
         }
