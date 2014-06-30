@@ -380,7 +380,7 @@ namespace FlightRoute {
             out_stream<<SPACE<<__latitude
                       <<SPACE<<__longitude
                       <<SPACE<<height_int
-                      <<SPACE<<pt_class<<"\r\n";
+                      <<SPACE<<pt_class<<"\n";
         }
         else
         {
@@ -391,7 +391,7 @@ namespace FlightRoute {
 
             out_stream<<SPACE<<coordoutput.GetAsEncryptString()
                       <<SPACE<<height_int
-                      <<SPACE<<pt_class<<"\r\n";
+                      <<SPACE<<pt_class<<"\n";
 
         }
 
@@ -579,7 +579,19 @@ namespace FlightRoute {
         __header.min_longitude      = (rs.__header.min_longitude    < __header.min_longitude)   ? rs.__header.min_longitude : __header.min_longitude    ;
 
         //2. std::vector< UAVFlightPoint > __flight_point;
-        __flight_point.insert(__flight_point.end(),rs.__flight_point.begin(),rs.__flight_point.end());
+        // first update the strip id of the second flight region
+        std::vector<UAVFlightPoint>::const_iterator it_rs_point = rs.__flight_point.begin();
+
+        std::vector<UAVFlightPoint> second_region_points;
+        for ( ;it_rs_point!= rs.__flight_point.end();it_rs_point++)
+        {
+            UAVFlightPoint pt = *it_rs_point;
+            pt.__strip_id +=  __flight_statistic.__count_strips;
+
+            second_region_points.push_back(pt);
+        }
+
+        __flight_point.insert(__flight_point.end(),second_region_points.begin(),second_region_points.end());
 
         //3. expand the UAVFlightStatisticInfo __flight_statistic;
         __flight_statistic.__count_exposures    += rs.__flight_statistic.__count_exposures;
