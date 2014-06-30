@@ -30,7 +30,7 @@ UAVRouteOutputer::UAVRouteOutputer()
                 (*it_pt).Output(output_route_file);
             }
 
-            output_route_file<<"END"<<"\r\n";
+            output_route_file<<"END"<<"\n";
 
             route_design.__flight_statistic.Output(output_route_file);
 
@@ -95,7 +95,7 @@ UAVRouteOutputer::UAVRouteOutputer()
                 (*it_pt).Output(output_route_file,true);
             }
 
-            output_route_file<<"END"<<"\r\n";
+            output_route_file<<"END"<<"\n";
 
             route_design.__flight_statistic.Output(output_route_file);
 

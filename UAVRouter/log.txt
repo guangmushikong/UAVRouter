@@ -1,0 +1,2720 @@
+G:/Gomo/Data/0622/001.kml
+G:/Gomo/Data/0622/002A.kml
+G:/Gomo/Data/0622/002B.kml
+G:/Gomo/Data/0622/003.kml
+G:/Gomo/Data/0622/004.kml
+G:/Gomo/Data/0622/005.kml
+G:/Gomo/Data/0622/005A.kml
+G:/Gomo/Data/0622/006.kml
+prePoint:longitude498893latitude4.41161e+006
+current:longitude498987latitude4.41158e+006
+dist of points in guass: 100
+
+prePoint:longitude498987latitude4.41158e+006
+current:longitude499116latitude4.41153e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499116latitude4.41153e+006
+current:longitude499245latitude4.41148e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499245latitude4.41148e+006
+current:longitude499373latitude4.41144e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499373latitude4.41144e+006
+current:longitude499502latitude4.41139e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499502latitude4.41139e+006
+current:longitude499630latitude4.41134e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499630latitude4.41134e+006
+current:longitude499759latitude4.4113e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499759latitude4.4113e+006
+current:longitude499887latitude4.41125e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499887latitude4.41125e+006
+current:longitude500016latitude4.4112e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500016latitude4.4112e+006
+current:longitude500145latitude4.41116e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500145latitude4.41116e+006
+current:longitude500273latitude4.41111e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500273latitude4.41111e+006
+current:longitude500402latitude4.41106e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500402latitude4.41106e+006
+current:longitude500530latitude4.41102e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500530latitude4.41102e+006
+current:longitude500659latitude4.41097e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500659latitude4.41097e+006
+current:longitude500787latitude4.41092e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500787latitude4.41092e+006
+current:longitude500916latitude4.41088e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500916latitude4.41088e+006
+current:longitude501045latitude4.41083e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501045latitude4.41083e+006
+current:longitude501173latitude4.41079e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501173latitude4.41079e+006
+current:longitude501267latitude4.41075e+006
+dist of points in guass: 100
+
+prePoint:longitude501389latitude4.41109e+006
+current:longitude501295latitude4.41112e+006
+dist of points in guass: 100
+
+prePoint:longitude501295latitude4.41112e+006
+current:longitude501167latitude4.41117e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501167latitude4.41117e+006
+current:longitude501038latitude4.41122e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501038latitude4.41122e+006
+current:longitude500910latitude4.41126e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500910latitude4.41126e+006
+current:longitude500781latitude4.41131e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500781latitude4.41131e+006
+current:longitude500652latitude4.41136e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500652latitude4.41136e+006
+current:longitude500524latitude4.4114e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500524latitude4.4114e+006
+current:longitude500395latitude4.41145e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500395latitude4.41145e+006
+current:longitude500267latitude4.4115e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500267latitude4.4115e+006
+current:longitude500138latitude4.41154e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500138latitude4.41154e+006
+current:longitude500010latitude4.41159e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500010latitude4.41159e+006
+current:longitude499881latitude4.41163e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499881latitude4.41163e+006
+current:longitude499753latitude4.41168e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499753latitude4.41168e+006
+current:longitude499624latitude4.41173e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499624latitude4.41173e+006
+current:longitude499495latitude4.41177e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499495latitude4.41177e+006
+current:longitude499367latitude4.41182e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499367latitude4.41182e+006
+current:longitude499238latitude4.41187e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499238latitude4.41187e+006
+current:longitude499110latitude4.41191e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499110latitude4.41191e+006
+current:longitude499016latitude4.41195e+006
+dist of points in guass: 100
+
+prePoint:longitude499138latitude4.41229e+006
+current:longitude499232latitude4.41225e+006
+dist of points in guass: 100
+
+prePoint:longitude499232latitude4.41225e+006
+current:longitude499360latitude4.4122e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499360latitude4.4122e+006
+current:longitude499489latitude4.41216e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499489latitude4.41216e+006
+current:longitude499618latitude4.41211e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499618latitude4.41211e+006
+current:longitude499746latitude4.41207e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499746latitude4.41207e+006
+current:longitude499875latitude4.41202e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499875latitude4.41202e+006
+current:longitude500003latitude4.41197e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500003latitude4.41197e+006
+current:longitude500132latitude4.41193e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500132latitude4.41193e+006
+current:longitude500260latitude4.41188e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500260latitude4.41188e+006
+current:longitude500389latitude4.41183e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500389latitude4.41183e+006
+current:longitude500518latitude4.41179e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500518latitude4.41179e+006
+current:longitude500646latitude4.41174e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500646latitude4.41174e+006
+current:longitude500775latitude4.41169e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500775latitude4.41169e+006
+current:longitude500903latitude4.41165e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500903latitude4.41165e+006
+current:longitude501032latitude4.4116e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501032latitude4.4116e+006
+current:longitude501160latitude4.41155e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501160latitude4.41155e+006
+current:longitude501289latitude4.41151e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501289latitude4.41151e+006
+current:longitude501418latitude4.41146e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501418latitude4.41146e+006
+current:longitude501512latitude4.41143e+006
+dist of points in guass: 100
+
+prePoint:longitude498945latitude4.41235e+006
+current:longitude499042latitude4.41238e+006
+dist of points in guass: 100
+
+prePoint:longitude499042latitude4.41238e+006
+current:longitude499174latitude4.41241e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499174latitude4.41241e+006
+current:longitude499307latitude4.41245e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499307latitude4.41245e+006
+current:longitude499439latitude4.41248e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499439latitude4.41248e+006
+current:longitude499571latitude4.41252e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499571latitude4.41252e+006
+current:longitude499703latitude4.41255e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499703latitude4.41255e+006
+current:longitude499835latitude4.41259e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499835latitude4.41259e+006
+current:longitude499968latitude4.41262e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499968latitude4.41262e+006
+current:longitude500100latitude4.41266e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500100latitude4.41266e+006
+current:longitude500232latitude4.41269e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500232latitude4.41269e+006
+current:longitude500364latitude4.41273e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500364latitude4.41273e+006
+current:longitude500497latitude4.41276e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500497latitude4.41276e+006
+current:longitude500629latitude4.4128e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500629latitude4.4128e+006
+current:longitude500761latitude4.41283e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500761latitude4.41283e+006
+current:longitude500893latitude4.41287e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500893latitude4.41287e+006
+current:longitude501025latitude4.4129e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501025latitude4.4129e+006
+current:longitude501158latitude4.41293e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501158latitude4.41293e+006
+current:longitude501254latitude4.41296e+006
+dist of points in guass: 100
+
+prePoint:longitude501163latitude4.41331e+006
+current:longitude501066latitude4.41328e+006
+dist of points in guass: 100
+
+prePoint:longitude501066latitude4.41328e+006
+current:longitude500934latitude4.41325e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500934latitude4.41325e+006
+current:longitude500802latitude4.41321e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500802latitude4.41321e+006
+current:longitude500670latitude4.41318e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500670latitude4.41318e+006
+current:longitude500537latitude4.41314e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500537latitude4.41314e+006
+current:longitude500405latitude4.41311e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500405latitude4.41311e+006
+current:longitude500273latitude4.41307e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500273latitude4.41307e+006
+current:longitude500141latitude4.41304e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500141latitude4.41304e+006
+current:longitude500008latitude4.413e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500008latitude4.413e+006
+current:longitude499876latitude4.41297e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499876latitude4.41297e+006
+current:longitude499744latitude4.41293e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499744latitude4.41293e+006
+current:longitude499612latitude4.4129e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499612latitude4.4129e+006
+current:longitude499480latitude4.41287e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499480latitude4.41287e+006
+current:longitude499347latitude4.41283e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499347latitude4.41283e+006
+current:longitude499215latitude4.4128e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499215latitude4.4128e+006
+current:longitude499083latitude4.41276e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499083latitude4.41276e+006
+current:longitude498951latitude4.41273e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498951latitude4.41273e+006
+current:longitude498854latitude4.4127e+006
+dist of points in guass: 100
+
+prePoint:longitude498763latitude4.41305e+006
+current:longitude498859latitude4.41307e+006
+dist of points in guass: 100
+
+prePoint:longitude498859latitude4.41307e+006
+current:longitude498992latitude4.41311e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498992latitude4.41311e+006
+current:longitude499124latitude4.41314e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499124latitude4.41314e+006
+current:longitude499256latitude4.41318e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499256latitude4.41318e+006
+current:longitude499388latitude4.41321e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499388latitude4.41321e+006
+current:longitude499520latitude4.41325e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499520latitude4.41325e+006
+current:longitude499653latitude4.41328e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499653latitude4.41328e+006
+current:longitude499785latitude4.41332e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499785latitude4.41332e+006
+current:longitude499917latitude4.41335e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499917latitude4.41335e+006
+current:longitude500049latitude4.41339e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500049latitude4.41339e+006
+current:longitude500181latitude4.41342e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500181latitude4.41342e+006
+current:longitude500314latitude4.41346e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500314latitude4.41346e+006
+current:longitude500446latitude4.41349e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500446latitude4.41349e+006
+current:longitude500578latitude4.41353e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500578latitude4.41353e+006
+current:longitude500710latitude4.41356e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500710latitude4.41356e+006
+current:longitude500843latitude4.4136e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500843latitude4.4136e+006
+current:longitude500975latitude4.41363e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500975latitude4.41363e+006
+current:longitude501071latitude4.41366e+006
+dist of points in guass: 100
+
+prePoint:longitude497869latitude4.4145e+006
+current:longitude497954latitude4.41445e+006
+dist of points in guass: 100
+
+prePoint:longitude497954latitude4.41445e+006
+current:longitude498071latitude4.41438e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498071latitude4.41438e+006
+current:longitude498187latitude4.41431e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498187latitude4.41431e+006
+current:longitude498304latitude4.41423e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498304latitude4.41423e+006
+current:longitude498420latitude4.41416e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498420latitude4.41416e+006
+current:longitude498537latitude4.41409e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498537latitude4.41409e+006
+current:longitude498653latitude4.41402e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498653latitude4.41402e+006
+current:longitude498770latitude4.41395e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498770latitude4.41395e+006
+current:longitude498886latitude4.41388e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498886latitude4.41388e+006
+current:longitude499003latitude4.41381e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499003latitude4.41381e+006
+current:longitude499119latitude4.41373e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499119latitude4.41373e+006
+current:longitude499236latitude4.41366e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499236latitude4.41366e+006
+current:longitude499352latitude4.41359e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499352latitude4.41359e+006
+current:longitude499469latitude4.41352e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499469latitude4.41352e+006
+current:longitude499585latitude4.41345e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499585latitude4.41345e+006
+current:longitude499702latitude4.41338e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499702latitude4.41338e+006
+current:longitude499818latitude4.4133e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499818latitude4.4133e+006
+current:longitude499935latitude4.41323e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499935latitude4.41323e+006
+current:longitude500051latitude4.41316e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500051latitude4.41316e+006
+current:longitude500168latitude4.41309e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500168latitude4.41309e+006
+current:longitude500284latitude4.41302e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500284latitude4.41302e+006
+current:longitude500400latitude4.41295e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500400latitude4.41295e+006
+current:longitude500517latitude4.41288e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500517latitude4.41288e+006
+current:longitude500633latitude4.4128e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500633latitude4.4128e+006
+current:longitude500750latitude4.41273e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500750latitude4.41273e+006
+current:longitude500866latitude4.41266e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500866latitude4.41266e+006
+current:longitude500983latitude4.41259e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500983latitude4.41259e+006
+current:longitude501099latitude4.41252e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501099latitude4.41252e+006
+current:longitude501185latitude4.41247e+006
+dist of points in guass: 100
+
+prePoint:longitude501373latitude4.41277e+006
+current:longitude501288latitude4.41282e+006
+dist of points in guass: 100
+
+prePoint:longitude501288latitude4.41282e+006
+current:longitude501171latitude4.4129e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501171latitude4.4129e+006
+current:longitude501055latitude4.41297e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501055latitude4.41297e+006
+current:longitude500938latitude4.41304e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500938latitude4.41304e+006
+current:longitude500822latitude4.41311e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500822latitude4.41311e+006
+current:longitude500705latitude4.41318e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500705latitude4.41318e+006
+current:longitude500589latitude4.41325e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500589latitude4.41325e+006
+current:longitude500472latitude4.41332e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500472latitude4.41332e+006
+current:longitude500356latitude4.4134e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500356latitude4.4134e+006
+current:longitude500239latitude4.41347e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500239latitude4.41347e+006
+current:longitude500123latitude4.41354e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500123latitude4.41354e+006
+current:longitude500006latitude4.41361e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500006latitude4.41361e+006
+current:longitude499890latitude4.41368e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499890latitude4.41368e+006
+current:longitude499773latitude4.41375e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499773latitude4.41375e+006
+current:longitude499657latitude4.41383e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499657latitude4.41383e+006
+current:longitude499540latitude4.4139e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499540latitude4.4139e+006
+current:longitude499424latitude4.41397e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499424latitude4.41397e+006
+current:longitude499307latitude4.41404e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499307latitude4.41404e+006
+current:longitude499191latitude4.41411e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499191latitude4.41411e+006
+current:longitude499074latitude4.41418e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499074latitude4.41418e+006
+current:longitude498958latitude4.41425e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498958latitude4.41425e+006
+current:longitude498841latitude4.41433e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498841latitude4.41433e+006
+current:longitude498725latitude4.4144e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498725latitude4.4144e+006
+current:longitude498608latitude4.41447e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498608latitude4.41447e+006
+current:longitude498492latitude4.41454e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498492latitude4.41454e+006
+current:longitude498375latitude4.41461e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498375latitude4.41461e+006
+current:longitude498259latitude4.41468e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498259latitude4.41468e+006
+current:longitude498142latitude4.41476e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498142latitude4.41476e+006
+current:longitude498057latitude4.41481e+006
+dist of points in guass: 100
+
+prePoint:longitude498245latitude4.41511e+006
+current:longitude498331latitude4.41506e+006
+dist of points in guass: 100
+
+prePoint:longitude498331latitude4.41506e+006
+current:longitude498447latitude4.41499e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498447latitude4.41499e+006
+current:longitude498564latitude4.41492e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498564latitude4.41492e+006
+current:longitude498680latitude4.41485e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498680latitude4.41485e+006
+current:longitude498797latitude4.41478e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498797latitude4.41478e+006
+current:longitude498913latitude4.4147e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498913latitude4.4147e+006
+current:longitude499030latitude4.41463e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499030latitude4.41463e+006
+current:longitude499146latitude4.41456e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499146latitude4.41456e+006
+current:longitude499263latitude4.41449e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499263latitude4.41449e+006
+current:longitude499379latitude4.41442e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499379latitude4.41442e+006
+current:longitude499495latitude4.41435e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499495latitude4.41435e+006
+current:longitude499612latitude4.41427e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499612latitude4.41427e+006
+current:longitude499728latitude4.4142e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499728latitude4.4142e+006
+current:longitude499845latitude4.41413e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499845latitude4.41413e+006
+current:longitude499961latitude4.41406e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499961latitude4.41406e+006
+current:longitude500078latitude4.41399e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500078latitude4.41399e+006
+current:longitude500194latitude4.41392e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500194latitude4.41392e+006
+current:longitude500311latitude4.41385e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500311latitude4.41385e+006
+current:longitude500427latitude4.41377e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500427latitude4.41377e+006
+current:longitude500544latitude4.4137e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500544latitude4.4137e+006
+current:longitude500660latitude4.41363e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500660latitude4.41363e+006
+current:longitude500777latitude4.41356e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500777latitude4.41356e+006
+current:longitude500893latitude4.41349e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500893latitude4.41349e+006
+current:longitude501010latitude4.41342e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501010latitude4.41342e+006
+current:longitude501126latitude4.41334e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501126latitude4.41334e+006
+current:longitude501243latitude4.41327e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501243latitude4.41327e+006
+current:longitude501359latitude4.4132e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501359latitude4.4132e+006
+current:longitude501476latitude4.41313e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501476latitude4.41313e+006
+current:longitude501561latitude4.41308e+006
+dist of points in guass: 100
+
+prePoint:longitude501749latitude4.41338e+006
+current:longitude501664latitude4.41344e+006
+dist of points in guass: 100
+
+prePoint:longitude501664latitude4.41344e+006
+current:longitude501547latitude4.41351e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501547latitude4.41351e+006
+current:longitude501431latitude4.41358e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501431latitude4.41358e+006
+current:longitude501314latitude4.41365e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501314latitude4.41365e+006
+current:longitude501198latitude4.41372e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501198latitude4.41372e+006
+current:longitude501081latitude4.41379e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501081latitude4.41379e+006
+current:longitude500965latitude4.41387e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500965latitude4.41387e+006
+current:longitude500849latitude4.41394e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500849latitude4.41394e+006
+current:longitude500732latitude4.41401e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500732latitude4.41401e+006
+current:longitude500616latitude4.41408e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500616latitude4.41408e+006
+current:longitude500499latitude4.41415e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500499latitude4.41415e+006
+current:longitude500383latitude4.41422e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500383latitude4.41422e+006
+current:longitude500266latitude4.4143e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500266latitude4.4143e+006
+current:longitude500150latitude4.41437e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500150latitude4.41437e+006
+current:longitude500033latitude4.41444e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500033latitude4.41444e+006
+current:longitude499917latitude4.41451e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499917latitude4.41451e+006
+current:longitude499800latitude4.41458e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499800latitude4.41458e+006
+current:longitude499684latitude4.41465e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499684latitude4.41465e+006
+current:longitude499567latitude4.41472e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499567latitude4.41472e+006
+current:longitude499451latitude4.4148e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499451latitude4.4148e+006
+current:longitude499334latitude4.41487e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499334latitude4.41487e+006
+current:longitude499218latitude4.41494e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499218latitude4.41494e+006
+current:longitude499101latitude4.41501e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499101latitude4.41501e+006
+current:longitude498985latitude4.41508e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498985latitude4.41508e+006
+current:longitude498868latitude4.41515e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498868latitude4.41515e+006
+current:longitude498752latitude4.41523e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498752latitude4.41523e+006
+current:longitude498635latitude4.4153e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498635latitude4.4153e+006
+current:longitude498519latitude4.41537e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498519latitude4.41537e+006
+current:longitude498434latitude4.41542e+006
+dist of points in guass: 100
+
+prePoint:longitude498622latitude4.41573e+006
+current:longitude498707latitude4.41567e+006
+dist of points in guass: 100
+
+prePoint:longitude498707latitude4.41567e+006
+current:longitude498823latitude4.4156e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498823latitude4.4156e+006
+current:longitude498940latitude4.41553e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498940latitude4.41553e+006
+current:longitude499056latitude4.41546e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499056latitude4.41546e+006
+current:longitude499173latitude4.41539e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499173latitude4.41539e+006
+current:longitude499289latitude4.41532e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499289latitude4.41532e+006
+current:longitude499406latitude4.41525e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499406latitude4.41525e+006
+current:longitude499522latitude4.41517e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499522latitude4.41517e+006
+current:longitude499639latitude4.4151e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499639latitude4.4151e+006
+current:longitude499755latitude4.41503e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499755latitude4.41503e+006
+current:longitude499872latitude4.41496e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499872latitude4.41496e+006
+current:longitude499988latitude4.41489e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499988latitude4.41489e+006
+current:longitude500105latitude4.41482e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500105latitude4.41482e+006
+current:longitude500221latitude4.41474e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500221latitude4.41474e+006
+current:longitude500338latitude4.41467e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500338latitude4.41467e+006
+current:longitude500454latitude4.4146e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500454latitude4.4146e+006
+current:longitude500571latitude4.41453e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500571latitude4.41453e+006
+current:longitude500687latitude4.41446e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500687latitude4.41446e+006
+current:longitude500804latitude4.41439e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500804latitude4.41439e+006
+current:longitude500920latitude4.41432e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500920latitude4.41432e+006
+current:longitude501037latitude4.41424e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501037latitude4.41424e+006
+current:longitude501153latitude4.41417e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501153latitude4.41417e+006
+current:longitude501270latitude4.4141e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501270latitude4.4141e+006
+current:longitude501386latitude4.41403e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501386latitude4.41403e+006
+current:longitude501503latitude4.41396e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501503latitude4.41396e+006
+current:longitude501619latitude4.41389e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501619latitude4.41389e+006
+current:longitude501736latitude4.41381e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501736latitude4.41381e+006
+current:longitude501852latitude4.41374e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501852latitude4.41374e+006
+current:longitude501937latitude4.41369e+006
+dist of points in guass: 100
+
+prePoint:longitude502125latitude4.414e+006
+current:longitude502040latitude4.41405e+006
+dist of points in guass: 100
+
+prePoint:longitude502040latitude4.41405e+006
+current:longitude501924latitude4.41412e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501924latitude4.41412e+006
+current:longitude501807latitude4.41419e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501807latitude4.41419e+006
+current:longitude501691latitude4.41426e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501691latitude4.41426e+006
+current:longitude501574latitude4.41434e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501574latitude4.41434e+006
+current:longitude501458latitude4.41441e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501458latitude4.41441e+006
+current:longitude501341latitude4.41448e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501341latitude4.41448e+006
+current:longitude501225latitude4.41455e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501225latitude4.41455e+006
+current:longitude501108latitude4.41462e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501108latitude4.41462e+006
+current:longitude500992latitude4.41469e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500992latitude4.41469e+006
+current:longitude500875latitude4.41476e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500875latitude4.41476e+006
+current:longitude500759latitude4.41484e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500759latitude4.41484e+006
+current:longitude500642latitude4.41491e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500642latitude4.41491e+006
+current:longitude500526latitude4.41498e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500526latitude4.41498e+006
+current:longitude500409latitude4.41505e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500409latitude4.41505e+006
+current:longitude500293latitude4.41512e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500293latitude4.41512e+006
+current:longitude500176latitude4.41519e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500176latitude4.41519e+006
+current:longitude500060latitude4.41527e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500060latitude4.41527e+006
+current:longitude499944latitude4.41534e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499944latitude4.41534e+006
+current:longitude499827latitude4.41541e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499827latitude4.41541e+006
+current:longitude499711latitude4.41548e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499711latitude4.41548e+006
+current:longitude499594latitude4.41555e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499594latitude4.41555e+006
+current:longitude499478latitude4.41562e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499478latitude4.41562e+006
+current:longitude499361latitude4.41569e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499361latitude4.41569e+006
+current:longitude499245latitude4.41577e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499245latitude4.41577e+006
+current:longitude499128latitude4.41584e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499128latitude4.41584e+006
+current:longitude499012latitude4.41591e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499012latitude4.41591e+006
+current:longitude498895latitude4.41598e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498895latitude4.41598e+006
+current:longitude498810latitude4.41603e+006
+dist of points in guass: 100
+
+prePoint:longitude501063latitude4.41344e+006
+current:longitude500966latitude4.41341e+006
+dist of points in guass: 100
+
+prePoint:longitude500966latitude4.41341e+006
+current:longitude500834latitude4.41338e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500834latitude4.41338e+006
+current:longitude500701latitude4.41335e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500701latitude4.41335e+006
+current:longitude500569latitude4.41331e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500569latitude4.41331e+006
+current:longitude500437latitude4.41328e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500437latitude4.41328e+006
+current:longitude500305latitude4.41324e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500305latitude4.41324e+006
+current:longitude500173latitude4.41321e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500173latitude4.41321e+006
+current:longitude500040latitude4.41317e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500040latitude4.41317e+006
+current:longitude499908latitude4.41314e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499908latitude4.41314e+006
+current:longitude499776latitude4.4131e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499776latitude4.4131e+006
+current:longitude499644latitude4.41307e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499644latitude4.41307e+006
+current:longitude499511latitude4.41303e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499511latitude4.41303e+006
+current:longitude499379latitude4.413e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499379latitude4.413e+006
+current:longitude499247latitude4.41296e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499247latitude4.41296e+006
+current:longitude499115latitude4.41293e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499115latitude4.41293e+006
+current:longitude498983latitude4.41289e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498983latitude4.41289e+006
+current:longitude498850latitude4.41286e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498850latitude4.41286e+006
+current:longitude498754latitude4.41283e+006
+dist of points in guass: 100
+
+prePoint:longitude498845latitude4.41249e+006
+current:longitude498942latitude4.41251e+006
+dist of points in guass: 100
+
+prePoint:longitude498942latitude4.41251e+006
+current:longitude499074latitude4.41255e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499074latitude4.41255e+006
+current:longitude499206latitude4.41258e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499206latitude4.41258e+006
+current:longitude499338latitude4.41262e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499338latitude4.41262e+006
+current:longitude499471latitude4.41265e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499471latitude4.41265e+006
+current:longitude499603latitude4.41268e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499603latitude4.41268e+006
+current:longitude499735latitude4.41272e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499735latitude4.41272e+006
+current:longitude499867latitude4.41275e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499867latitude4.41275e+006
+current:longitude500000latitude4.41279e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500000latitude4.41279e+006
+current:longitude500132latitude4.41282e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500132latitude4.41282e+006
+current:longitude500264latitude4.41286e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500264latitude4.41286e+006
+current:longitude500396latitude4.41289e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500396latitude4.41289e+006
+current:longitude500528latitude4.41293e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500528latitude4.41293e+006
+current:longitude500661latitude4.41296e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500661latitude4.41296e+006
+current:longitude500793latitude4.413e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500793latitude4.413e+006
+current:longitude500925latitude4.41303e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500925latitude4.41303e+006
+current:longitude501057latitude4.41307e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501057latitude4.41307e+006
+current:longitude501154latitude4.41309e+006
+dist of points in guass: 100
+
+prePoint:longitude501245latitude4.41274e+006
+current:longitude501149latitude4.41272e+006
+dist of points in guass: 100
+
+prePoint:longitude501149latitude4.41272e+006
+current:longitude501016latitude4.41268e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501016latitude4.41268e+006
+current:longitude500884latitude4.41265e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500884latitude4.41265e+006
+current:longitude500752latitude4.41262e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500752latitude4.41262e+006
+current:longitude500620latitude4.41258e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500620latitude4.41258e+006
+current:longitude500488latitude4.41255e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500488latitude4.41255e+006
+current:longitude500355latitude4.41251e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500355latitude4.41251e+006
+current:longitude500223latitude4.41248e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500223latitude4.41248e+006
+current:longitude500091latitude4.41244e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500091latitude4.41244e+006
+current:longitude499959latitude4.41241e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499959latitude4.41241e+006
+current:longitude499827latitude4.41237e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499827latitude4.41237e+006
+current:longitude499694latitude4.41234e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499694latitude4.41234e+006
+current:longitude499562latitude4.4123e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499562latitude4.4123e+006
+current:longitude499430latitude4.41227e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499430latitude4.41227e+006
+current:longitude499298latitude4.41223e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499298latitude4.41223e+006
+current:longitude499165latitude4.4122e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499165latitude4.4122e+006
+current:longitude499033latitude4.41216e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499033latitude4.41216e+006
+current:longitude498937latitude4.41214e+006
+dist of points in guass: 100
+
+prePoint:longitude499031latitude4.41199e+006
+current:longitude499125latitude4.41196e+006
+dist of points in guass: 100
+
+prePoint:longitude499125latitude4.41196e+006
+current:longitude499254latitude4.41191e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499254latitude4.41191e+006
+current:longitude499382latitude4.41186e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499382latitude4.41186e+006
+current:longitude499511latitude4.41182e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499511latitude4.41182e+006
+current:longitude499640latitude4.41177e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499640latitude4.41177e+006
+current:longitude499768latitude4.41172e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499768latitude4.41172e+006
+current:longitude499897latitude4.41168e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499897latitude4.41168e+006
+current:longitude500025latitude4.41163e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500025latitude4.41163e+006
+current:longitude500154latitude4.41159e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500154latitude4.41159e+006
+current:longitude500282latitude4.41154e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500282latitude4.41154e+006
+current:longitude500411latitude4.41149e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500411latitude4.41149e+006
+current:longitude500540latitude4.41145e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500540latitude4.41145e+006
+current:longitude500668latitude4.4114e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500668latitude4.4114e+006
+current:longitude500797latitude4.41135e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500797latitude4.41135e+006
+current:longitude500925latitude4.41131e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500925latitude4.41131e+006
+current:longitude501054latitude4.41126e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501054latitude4.41126e+006
+current:longitude501182latitude4.41121e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501182latitude4.41121e+006
+current:longitude501311latitude4.41117e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501311latitude4.41117e+006
+current:longitude501405latitude4.41113e+006
+dist of points in guass: 100
+
+prePoint:longitude501283latitude4.41079e+006
+current:longitude501189latitude4.41083e+006
+dist of points in guass: 100
+
+prePoint:longitude501189latitude4.41083e+006
+current:longitude501060latitude4.41088e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501060latitude4.41088e+006
+current:longitude500932latitude4.41092e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500932latitude4.41092e+006
+current:longitude500803latitude4.41097e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500803latitude4.41097e+006
+current:longitude500675latitude4.41101e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500675latitude4.41101e+006
+current:longitude500546latitude4.41106e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500546latitude4.41106e+006
+current:longitude500417latitude4.41111e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500417latitude4.41111e+006
+current:longitude500289latitude4.41115e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500289latitude4.41115e+006
+current:longitude500160latitude4.4112e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500160latitude4.4112e+006
+current:longitude500032latitude4.41125e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500032latitude4.41125e+006
+current:longitude499903latitude4.41129e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499903latitude4.41129e+006
+current:longitude499775latitude4.41134e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499775latitude4.41134e+006
+current:longitude499646latitude4.41139e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499646latitude4.41139e+006
+current:longitude499517latitude4.41143e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499517latitude4.41143e+006
+current:longitude499389latitude4.41148e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499389latitude4.41148e+006
+current:longitude499260latitude4.41153e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499260latitude4.41153e+006
+current:longitude499132latitude4.41157e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499132latitude4.41157e+006
+current:longitude499003latitude4.41162e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499003latitude4.41162e+006
+current:longitude498909latitude4.41165e+006
+dist of points in guass: 100
+
+prePoint:longitude498787latitude4.41131e+006
+current:longitude498881latitude4.41128e+006
+dist of points in guass: 100
+
+prePoint:longitude498881latitude4.41128e+006
+current:longitude499010latitude4.41123e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499010latitude4.41123e+006
+current:longitude499138latitude4.41119e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499138latitude4.41119e+006
+current:longitude499267latitude4.41114e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499267latitude4.41114e+006
+current:longitude499395latitude4.41109e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499395latitude4.41109e+006
+current:longitude499524latitude4.41105e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499524latitude4.41105e+006
+current:longitude499652latitude4.411e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499652latitude4.411e+006
+current:longitude499781latitude4.41096e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499781latitude4.41096e+006
+current:longitude499910latitude4.41091e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499910latitude4.41091e+006
+current:longitude500038latitude4.41086e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500038latitude4.41086e+006
+current:longitude500167latitude4.41082e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500167latitude4.41082e+006
+current:longitude500295latitude4.41077e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500295latitude4.41077e+006
+current:longitude500424latitude4.41072e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500424latitude4.41072e+006
+current:longitude500552latitude4.41068e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500552latitude4.41068e+006
+current:longitude500681latitude4.41063e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500681latitude4.41063e+006
+current:longitude500810latitude4.41058e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500810latitude4.41058e+006
+current:longitude500938latitude4.41054e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500938latitude4.41054e+006
+current:longitude501067latitude4.41049e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501067latitude4.41049e+006
+current:longitude501161latitude4.41046e+006
+dist of points in guass: 100
+
+prePoint:longitude498945latitude4.41235e+006
+current:longitude499042latitude4.41238e+006
+dist of points in guass: 100
+
+prePoint:longitude499042latitude4.41238e+006
+current:longitude499174latitude4.41241e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499174latitude4.41241e+006
+current:longitude499307latitude4.41245e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499307latitude4.41245e+006
+current:longitude499439latitude4.41248e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499439latitude4.41248e+006
+current:longitude499571latitude4.41252e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499571latitude4.41252e+006
+current:longitude499703latitude4.41255e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499703latitude4.41255e+006
+current:longitude499835latitude4.41259e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499835latitude4.41259e+006
+current:longitude499968latitude4.41262e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499968latitude4.41262e+006
+current:longitude500100latitude4.41266e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500100latitude4.41266e+006
+current:longitude500232latitude4.41269e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500232latitude4.41269e+006
+current:longitude500364latitude4.41273e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500364latitude4.41273e+006
+current:longitude500497latitude4.41276e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500497latitude4.41276e+006
+current:longitude500629latitude4.4128e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500629latitude4.4128e+006
+current:longitude500761latitude4.41283e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500761latitude4.41283e+006
+current:longitude500893latitude4.41287e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500893latitude4.41287e+006
+current:longitude501025latitude4.4129e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501025latitude4.4129e+006
+current:longitude501158latitude4.41293e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501158latitude4.41293e+006
+current:longitude501254latitude4.41296e+006
+dist of points in guass: 100
+
+prePoint:longitude501163latitude4.41331e+006
+current:longitude501066latitude4.41328e+006
+dist of points in guass: 100
+
+prePoint:longitude501066latitude4.41328e+006
+current:longitude500934latitude4.41325e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500934latitude4.41325e+006
+current:longitude500802latitude4.41321e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500802latitude4.41321e+006
+current:longitude500670latitude4.41318e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500670latitude4.41318e+006
+current:longitude500537latitude4.41314e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500537latitude4.41314e+006
+current:longitude500405latitude4.41311e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500405latitude4.41311e+006
+current:longitude500273latitude4.41307e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500273latitude4.41307e+006
+current:longitude500141latitude4.41304e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500141latitude4.41304e+006
+current:longitude500008latitude4.413e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500008latitude4.413e+006
+current:longitude499876latitude4.41297e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499876latitude4.41297e+006
+current:longitude499744latitude4.41293e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499744latitude4.41293e+006
+current:longitude499612latitude4.4129e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499612latitude4.4129e+006
+current:longitude499480latitude4.41287e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499480latitude4.41287e+006
+current:longitude499347latitude4.41283e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499347latitude4.41283e+006
+current:longitude499215latitude4.4128e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499215latitude4.4128e+006
+current:longitude499083latitude4.41276e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499083latitude4.41276e+006
+current:longitude498951latitude4.41273e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498951latitude4.41273e+006
+current:longitude498854latitude4.4127e+006
+dist of points in guass: 100
+
+prePoint:longitude498763latitude4.41305e+006
+current:longitude498859latitude4.41307e+006
+dist of points in guass: 100
+
+prePoint:longitude498859latitude4.41307e+006
+current:longitude498992latitude4.41311e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498992latitude4.41311e+006
+current:longitude499124latitude4.41314e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499124latitude4.41314e+006
+current:longitude499256latitude4.41318e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499256latitude4.41318e+006
+current:longitude499388latitude4.41321e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499388latitude4.41321e+006
+current:longitude499520latitude4.41325e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499520latitude4.41325e+006
+current:longitude499653latitude4.41328e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499653latitude4.41328e+006
+current:longitude499785latitude4.41332e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499785latitude4.41332e+006
+current:longitude499917latitude4.41335e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499917latitude4.41335e+006
+current:longitude500049latitude4.41339e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500049latitude4.41339e+006
+current:longitude500181latitude4.41342e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500181latitude4.41342e+006
+current:longitude500314latitude4.41346e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500314latitude4.41346e+006
+current:longitude500446latitude4.41349e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500446latitude4.41349e+006
+current:longitude500578latitude4.41353e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500578latitude4.41353e+006
+current:longitude500710latitude4.41356e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500710latitude4.41356e+006
+current:longitude500843latitude4.4136e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500843latitude4.4136e+006
+current:longitude500975latitude4.41363e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500975latitude4.41363e+006
+current:longitude501071latitude4.41366e+006
+dist of points in guass: 100
+
+prePoint:longitude497869latitude4.4145e+006
+current:longitude497954latitude4.41445e+006
+dist of points in guass: 100
+
+prePoint:longitude497954latitude4.41445e+006
+current:longitude498071latitude4.41438e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498071latitude4.41438e+006
+current:longitude498187latitude4.41431e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498187latitude4.41431e+006
+current:longitude498304latitude4.41423e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498304latitude4.41423e+006
+current:longitude498420latitude4.41416e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498420latitude4.41416e+006
+current:longitude498537latitude4.41409e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498537latitude4.41409e+006
+current:longitude498653latitude4.41402e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498653latitude4.41402e+006
+current:longitude498770latitude4.41395e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498770latitude4.41395e+006
+current:longitude498886latitude4.41388e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498886latitude4.41388e+006
+current:longitude499003latitude4.41381e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499003latitude4.41381e+006
+current:longitude499119latitude4.41373e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499119latitude4.41373e+006
+current:longitude499236latitude4.41366e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499236latitude4.41366e+006
+current:longitude499352latitude4.41359e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499352latitude4.41359e+006
+current:longitude499469latitude4.41352e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499469latitude4.41352e+006
+current:longitude499585latitude4.41345e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499585latitude4.41345e+006
+current:longitude499702latitude4.41338e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499702latitude4.41338e+006
+current:longitude499818latitude4.4133e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499818latitude4.4133e+006
+current:longitude499935latitude4.41323e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499935latitude4.41323e+006
+current:longitude500051latitude4.41316e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500051latitude4.41316e+006
+current:longitude500168latitude4.41309e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500168latitude4.41309e+006
+current:longitude500284latitude4.41302e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500284latitude4.41302e+006
+current:longitude500400latitude4.41295e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500400latitude4.41295e+006
+current:longitude500517latitude4.41288e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500517latitude4.41288e+006
+current:longitude500633latitude4.4128e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500633latitude4.4128e+006
+current:longitude500750latitude4.41273e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500750latitude4.41273e+006
+current:longitude500866latitude4.41266e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500866latitude4.41266e+006
+current:longitude500983latitude4.41259e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500983latitude4.41259e+006
+current:longitude501099latitude4.41252e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501099latitude4.41252e+006
+current:longitude501185latitude4.41247e+006
+dist of points in guass: 100
+
+prePoint:longitude501373latitude4.41277e+006
+current:longitude501288latitude4.41282e+006
+dist of points in guass: 100
+
+prePoint:longitude501288latitude4.41282e+006
+current:longitude501171latitude4.4129e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501171latitude4.4129e+006
+current:longitude501055latitude4.41297e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501055latitude4.41297e+006
+current:longitude500938latitude4.41304e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500938latitude4.41304e+006
+current:longitude500822latitude4.41311e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500822latitude4.41311e+006
+current:longitude500705latitude4.41318e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500705latitude4.41318e+006
+current:longitude500589latitude4.41325e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500589latitude4.41325e+006
+current:longitude500472latitude4.41332e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500472latitude4.41332e+006
+current:longitude500356latitude4.4134e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500356latitude4.4134e+006
+current:longitude500239latitude4.41347e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500239latitude4.41347e+006
+current:longitude500123latitude4.41354e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500123latitude4.41354e+006
+current:longitude500006latitude4.41361e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500006latitude4.41361e+006
+current:longitude499890latitude4.41368e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499890latitude4.41368e+006
+current:longitude499773latitude4.41375e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499773latitude4.41375e+006
+current:longitude499657latitude4.41383e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499657latitude4.41383e+006
+current:longitude499540latitude4.4139e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499540latitude4.4139e+006
+current:longitude499424latitude4.41397e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499424latitude4.41397e+006
+current:longitude499307latitude4.41404e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499307latitude4.41404e+006
+current:longitude499191latitude4.41411e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499191latitude4.41411e+006
+current:longitude499074latitude4.41418e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499074latitude4.41418e+006
+current:longitude498958latitude4.41425e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498958latitude4.41425e+006
+current:longitude498841latitude4.41433e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498841latitude4.41433e+006
+current:longitude498725latitude4.4144e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498725latitude4.4144e+006
+current:longitude498608latitude4.41447e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498608latitude4.41447e+006
+current:longitude498492latitude4.41454e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498492latitude4.41454e+006
+current:longitude498375latitude4.41461e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498375latitude4.41461e+006
+current:longitude498259latitude4.41468e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498259latitude4.41468e+006
+current:longitude498142latitude4.41476e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498142latitude4.41476e+006
+current:longitude498057latitude4.41481e+006
+dist of points in guass: 100
+
+prePoint:longitude498245latitude4.41511e+006
+current:longitude498331latitude4.41506e+006
+dist of points in guass: 100
+
+prePoint:longitude498331latitude4.41506e+006
+current:longitude498447latitude4.41499e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498447latitude4.41499e+006
+current:longitude498564latitude4.41492e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498564latitude4.41492e+006
+current:longitude498680latitude4.41485e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498680latitude4.41485e+006
+current:longitude498797latitude4.41478e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498797latitude4.41478e+006
+current:longitude498913latitude4.4147e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498913latitude4.4147e+006
+current:longitude499030latitude4.41463e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499030latitude4.41463e+006
+current:longitude499146latitude4.41456e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499146latitude4.41456e+006
+current:longitude499263latitude4.41449e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499263latitude4.41449e+006
+current:longitude499379latitude4.41442e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499379latitude4.41442e+006
+current:longitude499495latitude4.41435e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499495latitude4.41435e+006
+current:longitude499612latitude4.41427e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499612latitude4.41427e+006
+current:longitude499728latitude4.4142e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499728latitude4.4142e+006
+current:longitude499845latitude4.41413e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499845latitude4.41413e+006
+current:longitude499961latitude4.41406e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499961latitude4.41406e+006
+current:longitude500078latitude4.41399e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500078latitude4.41399e+006
+current:longitude500194latitude4.41392e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500194latitude4.41392e+006
+current:longitude500311latitude4.41385e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500311latitude4.41385e+006
+current:longitude500427latitude4.41377e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500427latitude4.41377e+006
+current:longitude500544latitude4.4137e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500544latitude4.4137e+006
+current:longitude500660latitude4.41363e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500660latitude4.41363e+006
+current:longitude500777latitude4.41356e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500777latitude4.41356e+006
+current:longitude500893latitude4.41349e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500893latitude4.41349e+006
+current:longitude501010latitude4.41342e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501010latitude4.41342e+006
+current:longitude501126latitude4.41334e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501126latitude4.41334e+006
+current:longitude501243latitude4.41327e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501243latitude4.41327e+006
+current:longitude501359latitude4.4132e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501359latitude4.4132e+006
+current:longitude501476latitude4.41313e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501476latitude4.41313e+006
+current:longitude501561latitude4.41308e+006
+dist of points in guass: 100
+
+prePoint:longitude501749latitude4.41338e+006
+current:longitude501664latitude4.41344e+006
+dist of points in guass: 100
+
+prePoint:longitude501664latitude4.41344e+006
+current:longitude501547latitude4.41351e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501547latitude4.41351e+006
+current:longitude501431latitude4.41358e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501431latitude4.41358e+006
+current:longitude501314latitude4.41365e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501314latitude4.41365e+006
+current:longitude501198latitude4.41372e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501198latitude4.41372e+006
+current:longitude501081latitude4.41379e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501081latitude4.41379e+006
+current:longitude500965latitude4.41387e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500965latitude4.41387e+006
+current:longitude500849latitude4.41394e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500849latitude4.41394e+006
+current:longitude500732latitude4.41401e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500732latitude4.41401e+006
+current:longitude500616latitude4.41408e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500616latitude4.41408e+006
+current:longitude500499latitude4.41415e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500499latitude4.41415e+006
+current:longitude500383latitude4.41422e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500383latitude4.41422e+006
+current:longitude500266latitude4.4143e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500266latitude4.4143e+006
+current:longitude500150latitude4.41437e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500150latitude4.41437e+006
+current:longitude500033latitude4.41444e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500033latitude4.41444e+006
+current:longitude499917latitude4.41451e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499917latitude4.41451e+006
+current:longitude499800latitude4.41458e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499800latitude4.41458e+006
+current:longitude499684latitude4.41465e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499684latitude4.41465e+006
+current:longitude499567latitude4.41472e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499567latitude4.41472e+006
+current:longitude499451latitude4.4148e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499451latitude4.4148e+006
+current:longitude499334latitude4.41487e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499334latitude4.41487e+006
+current:longitude499218latitude4.41494e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499218latitude4.41494e+006
+current:longitude499101latitude4.41501e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499101latitude4.41501e+006
+current:longitude498985latitude4.41508e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498985latitude4.41508e+006
+current:longitude498868latitude4.41515e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498868latitude4.41515e+006
+current:longitude498752latitude4.41523e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498752latitude4.41523e+006
+current:longitude498635latitude4.4153e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498635latitude4.4153e+006
+current:longitude498519latitude4.41537e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498519latitude4.41537e+006
+current:longitude498434latitude4.41542e+006
+dist of points in guass: 100
+
+prePoint:longitude498622latitude4.41573e+006
+current:longitude498707latitude4.41567e+006
+dist of points in guass: 100
+
+prePoint:longitude498707latitude4.41567e+006
+current:longitude498823latitude4.4156e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498823latitude4.4156e+006
+current:longitude498940latitude4.41553e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498940latitude4.41553e+006
+current:longitude499056latitude4.41546e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499056latitude4.41546e+006
+current:longitude499173latitude4.41539e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499173latitude4.41539e+006
+current:longitude499289latitude4.41532e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499289latitude4.41532e+006
+current:longitude499406latitude4.41525e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499406latitude4.41525e+006
+current:longitude499522latitude4.41517e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499522latitude4.41517e+006
+current:longitude499639latitude4.4151e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499639latitude4.4151e+006
+current:longitude499755latitude4.41503e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499755latitude4.41503e+006
+current:longitude499872latitude4.41496e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499872latitude4.41496e+006
+current:longitude499988latitude4.41489e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499988latitude4.41489e+006
+current:longitude500105latitude4.41482e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500105latitude4.41482e+006
+current:longitude500221latitude4.41474e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500221latitude4.41474e+006
+current:longitude500338latitude4.41467e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500338latitude4.41467e+006
+current:longitude500454latitude4.4146e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500454latitude4.4146e+006
+current:longitude500571latitude4.41453e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500571latitude4.41453e+006
+current:longitude500687latitude4.41446e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500687latitude4.41446e+006
+current:longitude500804latitude4.41439e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500804latitude4.41439e+006
+current:longitude500920latitude4.41432e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500920latitude4.41432e+006
+current:longitude501037latitude4.41424e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501037latitude4.41424e+006
+current:longitude501153latitude4.41417e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501153latitude4.41417e+006
+current:longitude501270latitude4.4141e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501270latitude4.4141e+006
+current:longitude501386latitude4.41403e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501386latitude4.41403e+006
+current:longitude501503latitude4.41396e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501503latitude4.41396e+006
+current:longitude501619latitude4.41389e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501619latitude4.41389e+006
+current:longitude501736latitude4.41381e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501736latitude4.41381e+006
+current:longitude501852latitude4.41374e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501852latitude4.41374e+006
+current:longitude501937latitude4.41369e+006
+dist of points in guass: 100
+
+prePoint:longitude502125latitude4.414e+006
+current:longitude502040latitude4.41405e+006
+dist of points in guass: 100
+
+prePoint:longitude502040latitude4.41405e+006
+current:longitude501924latitude4.41412e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501924latitude4.41412e+006
+current:longitude501807latitude4.41419e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501807latitude4.41419e+006
+current:longitude501691latitude4.41426e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501691latitude4.41426e+006
+current:longitude501574latitude4.41434e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501574latitude4.41434e+006
+current:longitude501458latitude4.41441e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501458latitude4.41441e+006
+current:longitude501341latitude4.41448e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501341latitude4.41448e+006
+current:longitude501225latitude4.41455e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501225latitude4.41455e+006
+current:longitude501108latitude4.41462e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501108latitude4.41462e+006
+current:longitude500992latitude4.41469e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500992latitude4.41469e+006
+current:longitude500875latitude4.41476e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500875latitude4.41476e+006
+current:longitude500759latitude4.41484e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500759latitude4.41484e+006
+current:longitude500642latitude4.41491e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500642latitude4.41491e+006
+current:longitude500526latitude4.41498e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500526latitude4.41498e+006
+current:longitude500409latitude4.41505e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500409latitude4.41505e+006
+current:longitude500293latitude4.41512e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500293latitude4.41512e+006
+current:longitude500176latitude4.41519e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500176latitude4.41519e+006
+current:longitude500060latitude4.41527e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500060latitude4.41527e+006
+current:longitude499944latitude4.41534e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499944latitude4.41534e+006
+current:longitude499827latitude4.41541e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499827latitude4.41541e+006
+current:longitude499711latitude4.41548e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499711latitude4.41548e+006
+current:longitude499594latitude4.41555e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499594latitude4.41555e+006
+current:longitude499478latitude4.41562e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499478latitude4.41562e+006
+current:longitude499361latitude4.41569e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499361latitude4.41569e+006
+current:longitude499245latitude4.41577e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499245latitude4.41577e+006
+current:longitude499128latitude4.41584e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499128latitude4.41584e+006
+current:longitude499012latitude4.41591e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499012latitude4.41591e+006
+current:longitude498895latitude4.41598e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498895latitude4.41598e+006
+current:longitude498810latitude4.41603e+006
+dist of points in guass: 100
+
+prePoint:longitude501063latitude4.41344e+006
+current:longitude500966latitude4.41341e+006
+dist of points in guass: 100
+
+prePoint:longitude500966latitude4.41341e+006
+current:longitude500834latitude4.41338e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500834latitude4.41338e+006
+current:longitude500701latitude4.41335e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500701latitude4.41335e+006
+current:longitude500569latitude4.41331e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500569latitude4.41331e+006
+current:longitude500437latitude4.41328e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500437latitude4.41328e+006
+current:longitude500305latitude4.41324e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500305latitude4.41324e+006
+current:longitude500173latitude4.41321e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500173latitude4.41321e+006
+current:longitude500040latitude4.41317e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500040latitude4.41317e+006
+current:longitude499908latitude4.41314e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499908latitude4.41314e+006
+current:longitude499776latitude4.4131e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499776latitude4.4131e+006
+current:longitude499644latitude4.41307e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499644latitude4.41307e+006
+current:longitude499511latitude4.41303e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499511latitude4.41303e+006
+current:longitude499379latitude4.413e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499379latitude4.413e+006
+current:longitude499247latitude4.41296e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499247latitude4.41296e+006
+current:longitude499115latitude4.41293e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499115latitude4.41293e+006
+current:longitude498983latitude4.41289e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498983latitude4.41289e+006
+current:longitude498850latitude4.41286e+006
+dist of points in guass: 136.705
+
+prePoint:longitude498850latitude4.41286e+006
+current:longitude498754latitude4.41283e+006
+dist of points in guass: 100
+
+prePoint:longitude498845latitude4.41249e+006
+current:longitude498942latitude4.41251e+006
+dist of points in guass: 100
+
+prePoint:longitude498942latitude4.41251e+006
+current:longitude499074latitude4.41255e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499074latitude4.41255e+006
+current:longitude499206latitude4.41258e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499206latitude4.41258e+006
+current:longitude499338latitude4.41262e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499338latitude4.41262e+006
+current:longitude499471latitude4.41265e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499471latitude4.41265e+006
+current:longitude499603latitude4.41268e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499603latitude4.41268e+006
+current:longitude499735latitude4.41272e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499735latitude4.41272e+006
+current:longitude499867latitude4.41275e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499867latitude4.41275e+006
+current:longitude500000latitude4.41279e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500000latitude4.41279e+006
+current:longitude500132latitude4.41282e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500132latitude4.41282e+006
+current:longitude500264latitude4.41286e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500264latitude4.41286e+006
+current:longitude500396latitude4.41289e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500396latitude4.41289e+006
+current:longitude500528latitude4.41293e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500528latitude4.41293e+006
+current:longitude500661latitude4.41296e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500661latitude4.41296e+006
+current:longitude500793latitude4.413e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500793latitude4.413e+006
+current:longitude500925latitude4.41303e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500925latitude4.41303e+006
+current:longitude501057latitude4.41307e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501057latitude4.41307e+006
+current:longitude501154latitude4.41309e+006
+dist of points in guass: 100
+
+prePoint:longitude501245latitude4.41274e+006
+current:longitude501149latitude4.41272e+006
+dist of points in guass: 100
+
+prePoint:longitude501149latitude4.41272e+006
+current:longitude501016latitude4.41268e+006
+dist of points in guass: 136.705
+
+prePoint:longitude501016latitude4.41268e+006
+current:longitude500884latitude4.41265e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500884latitude4.41265e+006
+current:longitude500752latitude4.41262e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500752latitude4.41262e+006
+current:longitude500620latitude4.41258e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500620latitude4.41258e+006
+current:longitude500488latitude4.41255e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500488latitude4.41255e+006
+current:longitude500355latitude4.41251e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500355latitude4.41251e+006
+current:longitude500223latitude4.41248e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500223latitude4.41248e+006
+current:longitude500091latitude4.41244e+006
+dist of points in guass: 136.705
+
+prePoint:longitude500091latitude4.41244e+006
+current:longitude499959latitude4.41241e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499959latitude4.41241e+006
+current:longitude499827latitude4.41237e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499827latitude4.41237e+006
+current:longitude499694latitude4.41234e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499694latitude4.41234e+006
+current:longitude499562latitude4.4123e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499562latitude4.4123e+006
+current:longitude499430latitude4.41227e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499430latitude4.41227e+006
+current:longitude499298latitude4.41223e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499298latitude4.41223e+006
+current:longitude499165latitude4.4122e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499165latitude4.4122e+006
+current:longitude499033latitude4.41216e+006
+dist of points in guass: 136.705
+
+prePoint:longitude499033latitude4.41216e+006
+current:longitude498937latitude4.41214e+006
+dist of points in guass: 100
+

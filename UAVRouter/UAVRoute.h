@@ -246,7 +246,7 @@ namespace FlightRoute {
         inline void Output(std::ostream & out_stream,bool encrypt=false) const
         {
             //BEGIN FLAG
-            out_stream<<"BEGIN"<<"\r\n";
+            out_stream<<"BEGIN"<<"\n";
             int intAirportHeight=airport_height;
 
             std::string airport_upper(airport_name);
@@ -261,14 +261,14 @@ namespace FlightRoute {
                 out_stream<<min_latitude
                           <<SPACE<<max_latitude
                           <<SPACE<<min_longitude
-                          <<SPACE<<max_longitude<<"\r\n";
+                          <<SPACE<<max_longitude<<"\n";
 
 
                 //second line
                 out_stream<<airport_upper
                           <<SPACE<<airport_latitude
                           <<SPACE<<airport_longitude
-                         <<SPACE<<intAirportHeight<<"\r\n";
+                         <<SPACE<<intAirportHeight<<"\n";
             }
             else
             {
@@ -278,13 +278,13 @@ namespace FlightRoute {
 //                coordoutput.SetAsDouble(min_latitude,max_latitude);
 //                out_stream<<coordoutput.GetAsEncryptString();
 //                coordoutput.SetAsDouble(min_longitude,max_longitude);
-//                out_stream<<coordoutput.GetAsEncryptString()<<"\r\n";
+//                out_stream<<coordoutput.GetAsEncryptString()<<"\n";
 
 //                //second line
 //                coordoutput.SetAsDouble(airport_latitude,airport_longitude);
 //                out_stream<<airport_upper
 //                          <<SPACE<<coordoutput.GetAsEncryptString()
-//                          <<SPACE<<intAirportHeight<<"\r\n";
+//                          <<SPACE<<intAirportHeight<<"\n";
 
             }
 
@@ -362,11 +362,11 @@ namespace FlightRoute {
             out_stream<<setiosflags(ios::fixed)<<setiosflags(ios::showpoint);
             out_stream.precision(2);
 
-            out_stream<<"MBR Area(m2):"<< __MBR_Area<<"\r\n";
-            out_stream<<"Flight Region Polygon Area(m2):"<< __flight_region_area <<"\r\n";
-            out_stream<<"Exposure Points Count:"<< __count_exposures<<"\r\n";
-            out_stream<<"Strips Count:"<< count_strips<<"\r\n";
-            out_stream<<"Flight Course Length(m):"<< __photo_flight_course_chainage<<"\r\n";
+            out_stream<<"MBR Area(m2):"<< __MBR_Area<<"\n";
+            out_stream<<"Flight Region Polygon Area(m2):"<< __flight_region_area <<"\n";
+            out_stream<<"Exposure Points Count:"<< __count_exposures<<"\n";
+            out_stream<<"Strips Count:"<< count_strips<<"\n";
+            out_stream<<"Flight Course Length(m):"<< __photo_flight_course_chainage<<"\n";
 
         };
 
