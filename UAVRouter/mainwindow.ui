@@ -368,69 +368,40 @@
     <property name="title">
      <string>摄区定义</string>
     </property>
-    <widget class="QRadioButton" name="radioSinglePolygon">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>20</y>
-       <width>89</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>单区域</string>
-     </property>
-     <property name="checked">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QRadioButton" name="radioMultiPolygon">
-     <property name="geometry">
-      <rect>
-       <x>90</x>
-       <y>20</y>
-       <width>89</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>多区域</string>
-     </property>
-    </widget>
     <widget class="QTextEdit" name="textRegionFile">
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>70</y>
-       <width>241</width>
-       <height>21</height>
+       <y>30</y>
+       <width>181</width>
+       <height>61</height>
       </rect>
      </property>
     </widget>
     <widget class="QToolButton" name="toolButton_Region">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>50</y>
-       <width>37</width>
-       <height>18</height>
+       <x>210</x>
+       <y>40</y>
+       <width>51</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string>...</string>
+      <string>Choose</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_9">
+    <widget class="QToolButton" name="toolButton_Region_2">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>50</y>
-       <width>121</width>
-       <height>16</height>
+       <x>210</x>
+       <y>70</y>
+       <width>51</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string>选择kml文件...</string>
+      <string>Manage</string>
      </property>
     </widget>
    </widget>

@@ -15,10 +15,10 @@ RC_ICONS = guangmu_128.ico
 
 INCLUDEPATH = .
 
-INCLUDEPATH += F:/Win_32bit/gdal/Release/include
+INCLUDEPATH += F:/wangmiao/include
 INCLUDEPATH += ./niGeom
 
-LIBS += F:/Win_32bit/gdal/Release/lib/gdal_i.lib
+LIBS += F:/wangmiao/lib/gdal_i.lib
 
 SOURCES += main.cpp\
         mainwindow.cpp \
@@ -34,7 +34,8 @@ SOURCES += main.cpp\
     UAVRoute.cpp \
     coordinateoutput.cpp \
     multiregiondesigner.cpp \
-    flightparameterinput.cpp
+    flightparameterinput.cpp \
+    child_tv.cpp
 
 HEADERS  += mainwindow.h \
     flightroutedesign.h \
@@ -51,6 +52,8 @@ HEADERS  += mainwindow.h \
     geomertyconvertor.h \
     coordinateoutput.h \
     multiregiondesigner.h \
-    flightparameterinput.h
+    flightparameterinput.h \
+    child_tv.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    child_tv.ui

@@ -4,6 +4,8 @@
 #include <QMainWindow>
 
 #include "flightparameter.h"
+#include "child_tv.h"
+#include <set>
 
 namespace Ui {
 class MainWindow;
@@ -39,8 +41,14 @@ private slots:
 
     void on_radioSinglePolygon_toggled(bool checked);
 
+    void on_toolButton_Region_2_clicked();
+
 private:
     Ui::MainWindow *ui;
+    child_tv *ptrChild_TV;
+    bool fillInFlightParamRegionFiles();
+public:
+    std::set<QString> setInputKmlFile;
 
 protected:
     Gomo::FlightRoute::FlightParameter m_flight_param;

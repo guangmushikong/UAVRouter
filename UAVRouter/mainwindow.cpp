@@ -17,6 +17,7 @@
 
 #include <QXmlStreamReader>
 
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -41,10 +42,13 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->editCamWidth->setText(w);
     ui->editPixelsize->setText(pixel);
 
+    ptrChild_TV = NULL;
+    setInputKmlFile.clear();
 }
 
 MainWindow::~MainWindow()
 {
+    delete ptrChild_TV;
     delete ui;
 }
 
@@ -95,7 +99,7 @@ void MainWindow::on_toolButtonAirport_clicked()
 void MainWindow::on_toolButton_Region_clicked()
 {
 
-    m_flight_param.ClearFlightRegions();
+    /*m_flight_param.ClearFlightRegions();
 
     if(ui->radioSinglePolygon->isChecked())
     {
@@ -152,15 +156,42 @@ void MainWindow::on_toolButton_Region_clicked()
 
 
 
+    }*/
+
+    QFileDialog dlg(this,
+                    "Choose Flight Region Defination File(s)...",
+                    ".",
+                    "KML (*.kml *.KML)");
+    dlg.setFileMode(QFileDialog::ExistingFiles);
+    if(dlg.exec() == QFileDialog::Accepted)
+    {
+        QStringList slist = dlg.selectedFiles();
+        QString strFiles = "";
+        for(int i=0; i<slist.size(); ++i)
+        {
+            setInputKmlFile.insert(slist.at(i));
+            strFiles += slist.at(i);
+            if(i != (slist.size()-1))
+            {
+                strFiles += "\n";
+            }
+        }
+
+        ui->textRegionFile->setText(strFiles);
     }
-
-
 
 
 }
 
 void MainWindow::on_cmdDesignStart_clicked()
 {
+    if(!fillInFlightParamRegionFiles())
+    {
+        QMessageBox::information(this,
+                                 tr("Path Error"),
+                                 tr("You didn't select any files."));
+        return;
+    }
 
     DigitalCameraInfo cam;
 
@@ -294,4 +325,67 @@ void MainWindow::on_radioMultiPolygon_toggled(bool checked)
 void MainWindow::on_radioSinglePolygon_toggled(bool checked)
 {
 
+}
+
+void MainWindow::on_toolButton_Region_2_clicked()
+{
+    if(NULL != ptrChild_TV)
+    {
+        delete ptrChild_TV;
+    }
+
+    ptrChild_TV = new child_tv(this);
+
+    ptrChild_TV->move(this->x() + this->frameSize().width(), this->y());
+    ptrChild_TV->show();
+
+    if(ptrChild_TV->exec() == QDialog::Accepted)
+    {
+        QString strFiles = "";
+        for(std::set<QString>::iterator iter = setInputKmlFile.begin();
+            iter != setInputKmlFile.end(); ++iter)
+        {
+            strFiles += *iter;
+            strFiles += "\n";
+        }
+        ui->textRegionFile->setText(strFiles);
+    }
+}
+
+bool MainWindow::fillInFlightParamRegionFiles()
+{
+    if(0 >= setInputKmlFile.size())
+        return false;
+
+    QStringList slist;
+    for(std::set<QString>::iterator iter = setInputKmlFile.begin();
+        iter != setInputKmlFile.end(); ++iter)
+        slist.append(*iter);
+
+    slist.sort(Qt::CaseInsensitive);
+
+    GomoLogging * pLog = GomoLogging::GetInstancePtr();
+
+    if(1 == slist.size())
+    {
+        m_flight_param.FightRegion =
+                COGRGeometryFileReader::GetFirstOGRGeometryFromFile(slist.at(0).toStdString());
+
+        std::string logstr("hello!");
+        pLog->logging(logstr);
+    }
+    else
+    {
+        for(int i=0; i< slist.size(); i++)
+        {
+            std::string regionfilepath = slist.at(i).toStdString();
+
+            pLog->logging(regionfilepath);
+
+            m_flight_param.AddFlightRegionGeometry(
+                        COGRGeometryFileReader::GetFirstOGRGeometryFromFile(regionfilepath));
+        }
+    }
+
+    return true;
 }
