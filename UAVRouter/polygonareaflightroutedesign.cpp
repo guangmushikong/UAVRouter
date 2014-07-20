@@ -33,13 +33,6 @@ void PolygonAreaFlightRouteDesign::DesignInGaussPlane()
 
     CalculatePolygonOrientaion(region_Points_GaussCoords,m_region_center_GuassProj,m_angle_region_GuassProj);
 
-    // make sure the angle be smaller than 90 degree
-    if( m_angle_region_GuassProj> _PI_ / 2.0 )
-    {
-        m_angle_region_GuassProj -= _PI_ ;
-    }
-
-    //m_angle_region_GuassProj -= _PI_ / 4.0 ;
 
 
     ostringstream streamdebug;
@@ -71,68 +64,15 @@ void PolygonAreaFlightRouteDesign::PerformRouteDesign()
 
 bool PolygonAreaFlightRouteDesign::CalculatePolygonOrientaion(const Point2DArray&  polygon_2d,Point2D& center,double& angle)
 {
-        size_t numPoints = polygon_2d.size();
 
-        if (numPoints < 1)
-        {
-            angle = 0.0;
-            return false;
-        }
+    PolygonOrientation2D Polygon_orien(polygon_2d);
 
-        center = polygon_2d[0];
+    center = Polygon_orien.GetCenter();
 
-        for (size_t i = 1; i < numPoints; ++i)
-        {
-            center += polygon_2d[i];
-        }
-
-        center /= double(numPoints);
-
-        double varX = 0.0, varY = 0.0, covXY = 0.0;
-
-        for (size_t i = 0; i < numPoints; ++i)
-        {
-            Point2D pnt = polygon_2d[i] - center;//cetralize
-            varX    += pnt.X * pnt.X;
-            varY    += pnt.Y * pnt.Y;
-            covXY   += pnt.X * pnt.Y;
-        }
-
-        if (varX < ZEROF || varY < ZEROF)
-        {
-            angle = 0.0;
-            return true;
-        }
-
-        if (abs(varY - varX) < 0.0001)
-            angle = 45.0 * _PI_ / 180.0;
-        else
-        {
-            angle = atan(2.0 * covXY / (varY - varX)) / 2.0;
-
-            if (covXY > 0.0)
-            {
-                if (angle < 0.0)
-                    angle = angle + _PI_ / 2.0;
-
-                angle -= _PI_ / 4.0;//added by wangmiao
-            }
-
-            if (covXY < 0.0)
-            {
-                if (angle < 0.0)
-                    angle = angle + _PI_;
-                else
-                    angle = angle + _PI_ / 2.0;
-
-                angle += _PI_ / 4.0 ;//added by wangmiao
-            }
+    return Polygon_orien.GetOptimalOrientation(angle);
 
 
-
-        }
-
-    return true;
+    //return Gomo::Geometry2D::CalculatePolygonOrientaion2D(polygon_2d,center,angle);
 }
 
 

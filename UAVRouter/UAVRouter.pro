@@ -34,7 +34,12 @@ SOURCES += main.cpp\
     UAVRoute.cpp \
     coordinateoutput.cpp \
     multiregiondesigner.cpp \
-    flightparameterinput.cpp
+    flightparameterinput.cpp \
+    uicontroller.cpp \
+    GomoGemetry2D.cpp \
+    ./niGeom/source/niPolygon2d.cpp \
+    ./niGeom/source/niPolygon2dFn.cpp \
+    ./niGeom/source/niGeomMath2d.cpp
 
 HEADERS  += mainwindow.h \
     flightroutedesign.h \
@@ -51,6 +56,7 @@ HEADERS  += mainwindow.h \
     geomertyconvertor.h \
     coordinateoutput.h \
     multiregiondesigner.h \
-    flightparameterinput.h
+    flightparameterinput.h \
+    uicontroller.h
 
 FORMS    += mainwindow.ui
