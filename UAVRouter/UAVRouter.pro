@@ -15,10 +15,10 @@ RC_ICONS = guangmu_128.ico
 
 INCLUDEPATH = .
 
-INCLUDEPATH += F:/wangmiao/include
+INCLUDEPATH += F:/Win_32bit/gdal/Release/include
 INCLUDEPATH += ./niGeom
 
-LIBS += F:/wangmiao/lib/gdal_i.lib
+LIBS += F:/Win_32bit/gdal/Release/lib/gdal_i.lib
 
 SOURCES += main.cpp\
         mainwindow.cpp \

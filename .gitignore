@@ -213,3 +213,9 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+build-UAVRouter-Desktop_Qt_5_2_1_MSVC2010_32bit-Debug/Makefile
+build-UAVRouter-Desktop_Qt_5_2_1_MSVC2010_32bit-Debug/Makefile.Debug
+*.Release
+*.rc
+build-UAVRouter-Desktop_Qt_5_2_1_MSVC2010_32bit-Debug/ui_child_tv.h
+build-UAVRouter-Desktop_Qt_5_2_1_MSVC2010_32bit-Debug/ui_mainwindow.h
