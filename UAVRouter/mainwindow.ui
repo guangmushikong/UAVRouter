@@ -388,7 +388,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Choose</string>
+      <string>选择</string>
      </property>
     </widget>
     <widget class="QToolButton" name="toolButton_Region_2">
@@ -401,7 +401,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Manage</string>
+      <string>管理</string>
      </property>
     </widget>
    </widget>

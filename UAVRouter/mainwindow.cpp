@@ -173,6 +173,7 @@ void MainWindow::on_toolButton_Region_clicked()
     if(dlg.exec() == QFileDialog::Accepted)
     {
         QStringList slist = dlg.selectedFiles();
+        setInputKmlFile.clear();
         QString strFiles = "";
         for(int i=0; i<slist.size(); ++i)
         {
