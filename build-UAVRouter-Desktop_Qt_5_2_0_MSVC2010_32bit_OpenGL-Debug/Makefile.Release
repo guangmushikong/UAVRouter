@@ -58,7 +58,12 @@ SOURCES       = ..\UAVRouter\main.cpp \
 		..\UAVRouter\coordinateoutput.cpp \
 		..\UAVRouter\multiregiondesigner.cpp \
 		..\UAVRouter\flightparameterinput.cpp \
-		..\UAVRouter\child_tv.cpp release\moc_mainwindow.cpp \
+		..\UAVRouter\child_tv.cpp \
+		..\UAVRouter\uicontroller.cpp \
+		..\UAVRouter\GomoGemetry2D.cpp \
+		..\UAVRouter\niGeom\source\niPolygon2d.cpp \
+		..\UAVRouter\niGeom\source\niPolygon2dFn.cpp \
+		..\UAVRouter\niGeom\source\niGeomMath2d.cpp release\moc_mainwindow.cpp \
 		release\moc_child_tv.cpp
 OBJECTS       = release\main.obj \
 		release\mainwindow.obj \
@@ -76,6 +81,11 @@ OBJECTS       = release\main.obj \
 		release\multiregiondesigner.obj \
 		release\flightparameterinput.obj \
 		release\child_tv.obj \
+		release\uicontroller.obj \
+		release\GomoGemetry2D.obj \
+		release\niPolygon2d.obj \
+		release\niPolygon2dFn.obj \
+		release\niGeomMath2d.obj \
 		release\moc_mainwindow.obj \
 		release\moc_child_tv.obj
 
@@ -88,6 +98,46 @@ DESTDIR_TARGET = release\UAVRouter.exe
 ####### Implicit rules
 
 .SUFFIXES: .c .cpp .cc .cxx
+
+{release}.cpp{release\}.obj::
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -Forelease\ @<<
+	$<
+<<
+
+{release}.cc{release\}.obj::
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -Forelease\ @<<
+	$<
+<<
+
+{release}.cxx{release\}.obj::
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -Forelease\ @<<
+	$<
+<<
+
+{release}.c{release\}.obj::
+	$(CC) -c $(CFLAGS) $(INCPATH) -Forelease\ @<<
+	$<
+<<
+
+{..\UAVRouter\niGeom\source}.cpp{release\}.obj::
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -Forelease\ @<<
+	$<
+<<
+
+{..\UAVRouter\niGeom\source}.cc{release\}.obj::
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -Forelease\ @<<
+	$<
+<<
+
+{..\UAVRouter\niGeom\source}.cxx{release\}.obj::
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -Forelease\ @<<
+	$<
+<<
+
+{..\UAVRouter\niGeom\source}.c{release\}.obj::
+	$(CC) -c $(CFLAGS) $(INCPATH) -Forelease\ @<<
+	$<
+<<
 
 {.}.cpp{release\}.obj::
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -Forelease\ @<<
@@ -129,26 +179,6 @@ DESTDIR_TARGET = release\UAVRouter.exe
 	$<
 <<
 
-{release}.cpp{release\}.obj::
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -Forelease\ @<<
-	$<
-<<
-
-{release}.cc{release\}.obj::
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -Forelease\ @<<
-	$<
-<<
-
-{release}.cxx{release\}.obj::
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -Forelease\ @<<
-	$<
-<<
-
-{release}.c{release\}.obj::
-	$(CC) -c $(CFLAGS) $(INCPATH) -Forelease\ @<<
-	$<
-<<
-
 ####### Build rules
 
 first: all
@@ -172,7 +202,7 @@ dist:
 	$(ZIP) UAVRouter.zip $(SOURCES) $(DIST) ..\UAVRouter\UAVRouter.pro D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\spec_pre.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\common\shell-win32.conf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\qconfig.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_axbase.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_axbase_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_axcontainer.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_axcontainer_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_axserver.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_axserver_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_bluetooth.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_bluetooth_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_bootstrap_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_clucene_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_concurrent.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_concurrent_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_core.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_core_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_declarative.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_declarative_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_designer.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_designer_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_designercomponents_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_gui.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_gui_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_help.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_help_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_multimedia.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_multimedia_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_multimediawidgets.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_multimediawidgets_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_network.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_network_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_nfc.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_nfc_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_opengl.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_opengl_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_openglextensions.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_openglextensions_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_platformsupport_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_positioning.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_positioning_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_printsupport.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_printsupport_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_qml.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_qml_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_qmldevtools_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_qmltest.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_qmltest_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_quick.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_quick_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_quickparticles_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_script.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_script_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_scripttools.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_scripttools_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_sensors.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_sensors_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_serialport.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_serialport_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_sql.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_sql_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_svg.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_svg_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_testlib.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_testlib_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_uitools.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_uitools_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_webkit.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_webkit_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_webkitwidgets.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_webkitwidgets_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_widgets.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_widgets_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_winextras.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_winextras_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_xml.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_xml_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_xmlpatterns.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\modules\qt_lib_xmlpatterns_private.pri D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\qt_functions.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\qt_config.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\win32-msvc2010\qmake.conf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\spec_post.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\exclusive_builds.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\default_pre.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\win32\default_pre.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\resolve_config.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\exclusive_builds_post.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\default_post.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\build_pass.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\qml_debug.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\declarative_debug.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\win32\rtti.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\warn_on.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\qt.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\resources.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\moc.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\win32\opengl.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\uic.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\win32\windows.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\testcase_targets.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\exceptions.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\yacc.prf D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\mkspecs\features\lex.prf ..\UAVRouter\UAVRouter.pro D:/Qt/Qt5.2.0/5.2.0/msvc2010_opengl/lib/Qt5Widgets.prl D:/Qt/Qt5.2.0/5.2.0/msvc2010_opengl/lib/Qt5Gui.prl D:/Qt/Qt5.2.0/5.2.0/msvc2010_opengl/lib/Qt5Core.prl  RESOURCES HEADERS SOURCES OBJECTIVE_SOURCES FORMS YACCSOURCES YACCSOURCES LEXSOURCES 
 
 clean: compiler_clean 
-	-$(DEL_FILE) release\main.obj release\mainwindow.obj release\flightroutedesign.obj release\polygonareaflightroutedesign.obj release\linearflightroutedesign.obj release\designtaskfactory.obj release\flightparameter.obj release\cogrgeometryfilereader.obj release\gomologging.obj release\uavrouteoutputer.obj release\geomertyconvertor.obj release\UAVRoute.obj release\coordinateoutput.obj release\multiregiondesigner.obj release\flightparameterinput.obj release\child_tv.obj release\moc_mainwindow.obj release\moc_child_tv.obj
+	-$(DEL_FILE) release\main.obj release\mainwindow.obj release\flightroutedesign.obj release\polygonareaflightroutedesign.obj release\linearflightroutedesign.obj release\designtaskfactory.obj release\flightparameter.obj release\cogrgeometryfilereader.obj release\gomologging.obj release\uavrouteoutputer.obj release\geomertyconvertor.obj release\UAVRoute.obj release\coordinateoutput.obj release\multiregiondesigner.obj release\flightparameterinput.obj release\child_tv.obj release\uicontroller.obj release\GomoGemetry2D.obj release\niPolygon2d.obj release\niPolygon2dFn.obj release\niGeomMath2d.obj release\moc_mainwindow.obj release\moc_child_tv.obj
 	-$(DEL_FILE) release\UAVRouter.exp release\UAVRouter.exe.embed.manifest
 	-$(DEL_FILE) release\UAVRouter_resource.res
 
@@ -629,6 +659,15 @@ release\mainwindow.obj: ..\UAVRouter\mainwindow.cpp ..\UAVRouter\cogrgeometryfil
 		..\UAVRouter\GomoGeometry2D.h \
 		..\UAVRouter\niGeom\niGeom\math\niVector2d.h \
 		..\UAVRouter\niGeom\niGeom\math\niMath.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2d.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeom2dTypes.h \
+		..\UAVRouter\niGeom\niGeom\niTypes.h \
+		..\UAVRouter\niGeom\niGeom\niBlob.h \
+		..\UAVRouter\niGeom\niGeom\niArrayT.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2dFn.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomDef.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomMath2d.h \
+		..\UAVRouter\niGeom\niGeom\math\niMatrix22.h \
 		..\UAVRouter\UAVRoute.h \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\QDebug \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qdebug.h \
@@ -751,7 +790,9 @@ release\mainwindow.obj: ..\UAVRouter\mainwindow.cpp ..\UAVRouter\cogrgeometryfil
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\QException \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qexception.h \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\QXmlStreamReader \
-		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qxmlstream.h
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qxmlstream.h \
+		..\UAVRouter\uicontroller.h \
+		ui_mainwindow.h
 
 release\flightroutedesign.obj: ..\UAVRouter\flightroutedesign.cpp ..\UAVRouter\flightroutedesign.h \
 		..\UAVRouter\flightparameter.h \
@@ -774,6 +815,15 @@ release\flightroutedesign.obj: ..\UAVRouter\flightroutedesign.cpp ..\UAVRouter\f
 		..\UAVRouter\GomoGeometry2D.h \
 		..\UAVRouter\niGeom\niGeom\math\niVector2d.h \
 		..\UAVRouter\niGeom\niGeom\math\niMath.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2d.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeom2dTypes.h \
+		..\UAVRouter\niGeom\niGeom\niTypes.h \
+		..\UAVRouter\niGeom\niGeom\niBlob.h \
+		..\UAVRouter\niGeom\niGeom\niArrayT.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2dFn.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomDef.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomMath2d.h \
+		..\UAVRouter\niGeom\niGeom\math\niMatrix22.h \
 		..\UAVRouter\UAVRoute.h \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\QDebug \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qdebug.h \
@@ -880,6 +930,15 @@ release\polygonareaflightroutedesign.obj: ..\UAVRouter\polygonareaflightroutedes
 		..\UAVRouter\GomoGeometry2D.h \
 		..\UAVRouter\niGeom\niGeom\math\niVector2d.h \
 		..\UAVRouter\niGeom\niGeom\math\niMath.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2d.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeom2dTypes.h \
+		..\UAVRouter\niGeom\niGeom\niTypes.h \
+		..\UAVRouter\niGeom\niGeom\niBlob.h \
+		..\UAVRouter\niGeom\niGeom\niArrayT.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2dFn.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomDef.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomMath2d.h \
+		..\UAVRouter\niGeom\niGeom\math\niMatrix22.h \
 		..\UAVRouter\UAVRoute.h \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\QDebug \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qdebug.h \
@@ -986,6 +1045,15 @@ release\linearflightroutedesign.obj: ..\UAVRouter\linearflightroutedesign.cpp ..
 		..\UAVRouter\GomoGeometry2D.h \
 		..\UAVRouter\niGeom\niGeom\math\niVector2d.h \
 		..\UAVRouter\niGeom\niGeom\math\niMath.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2d.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeom2dTypes.h \
+		..\UAVRouter\niGeom\niGeom\niTypes.h \
+		..\UAVRouter\niGeom\niGeom\niBlob.h \
+		..\UAVRouter\niGeom\niGeom\niArrayT.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2dFn.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomDef.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomMath2d.h \
+		..\UAVRouter\niGeom\niGeom\math\niMatrix22.h \
 		..\UAVRouter\UAVRoute.h \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\QDebug \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qdebug.h \
@@ -1087,6 +1155,15 @@ release\designtaskfactory.obj: ..\UAVRouter\designtaskfactory.cpp ..\UAVRouter\d
 		..\UAVRouter\GomoGeometry2D.h \
 		..\UAVRouter\niGeom\niGeom\math\niVector2d.h \
 		..\UAVRouter\niGeom\niGeom\math\niMath.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2d.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeom2dTypes.h \
+		..\UAVRouter\niGeom\niGeom\niTypes.h \
+		..\UAVRouter\niGeom\niGeom\niBlob.h \
+		..\UAVRouter\niGeom\niGeom\niArrayT.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2dFn.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomDef.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomMath2d.h \
+		..\UAVRouter\niGeom\niGeom\math\niMatrix22.h \
 		..\UAVRouter\UAVRoute.h \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\QDebug \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qdebug.h \
@@ -1345,6 +1422,15 @@ release\uavrouteoutputer.obj: ..\UAVRouter\uavrouteoutputer.cpp ..\UAVRouter\uav
 		..\UAVRouter\GomoGeometry2D.h \
 		..\UAVRouter\niGeom\niGeom\math\niVector2d.h \
 		..\UAVRouter\niGeom\niGeom\math\niMath.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2d.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeom2dTypes.h \
+		..\UAVRouter\niGeom\niGeom\niTypes.h \
+		..\UAVRouter\niGeom\niGeom\niBlob.h \
+		..\UAVRouter\niGeom\niGeom\niArrayT.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2dFn.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomDef.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomMath2d.h \
+		..\UAVRouter\niGeom\niGeom\math\niMatrix22.h \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\QDebug \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qdebug.h \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qalgorithms.h \
@@ -1440,6 +1526,15 @@ release\geomertyconvertor.obj: ..\UAVRouter\geomertyconvertor.cpp ..\UAVRouter\g
 		..\UAVRouter\GomoGeometry2D.h \
 		..\UAVRouter\niGeom\niGeom\math\niVector2d.h \
 		..\UAVRouter\niGeom\niGeom\math\niMath.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2d.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeom2dTypes.h \
+		..\UAVRouter\niGeom\niGeom\niTypes.h \
+		..\UAVRouter\niGeom\niGeom\niBlob.h \
+		..\UAVRouter\niGeom\niGeom\niArrayT.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2dFn.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomDef.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomMath2d.h \
+		..\UAVRouter\niGeom\niGeom\math\niMatrix22.h \
 		F:\wangmiao\include\ogrsf_frmts.h \
 		F:\wangmiao\include\ogr_feature.h \
 		F:\wangmiao\include\ogr_geometry.h \
@@ -1534,6 +1629,15 @@ release\UAVRoute.obj: ..\UAVRouter\UAVRoute.cpp ..\UAVRouter\UAVRoute.h \
 		..\UAVRouter\GomoGeometry2D.h \
 		..\UAVRouter\niGeom\niGeom\math\niVector2d.h \
 		..\UAVRouter\niGeom\niGeom\math\niMath.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2d.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeom2dTypes.h \
+		..\UAVRouter\niGeom\niGeom\niTypes.h \
+		..\UAVRouter\niGeom\niGeom\niBlob.h \
+		..\UAVRouter\niGeom\niGeom\niArrayT.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2dFn.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomDef.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomMath2d.h \
+		..\UAVRouter\niGeom\niGeom\math\niMatrix22.h \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\QDebug \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qdebug.h \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qalgorithms.h \
@@ -1649,6 +1753,15 @@ release\multiregiondesigner.obj: ..\UAVRouter\multiregiondesigner.cpp ..\UAVRout
 		..\UAVRouter\GomoGeometry2D.h \
 		..\UAVRouter\niGeom\niGeom\math\niVector2d.h \
 		..\UAVRouter\niGeom\niGeom\math\niMath.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2d.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeom2dTypes.h \
+		..\UAVRouter\niGeom\niGeom\niTypes.h \
+		..\UAVRouter\niGeom\niGeom\niBlob.h \
+		..\UAVRouter\niGeom\niGeom\niArrayT.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2dFn.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomDef.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomMath2d.h \
+		..\UAVRouter\niGeom\niGeom\math\niMatrix22.h \
 		..\UAVRouter\UAVRoute.h \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\QDebug \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qdebug.h \
@@ -1869,6 +1982,133 @@ release\child_tv.obj: ..\UAVRouter\child_tv.cpp ..\UAVRouter\child_tv.h \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtWidgets\qfiledialog.h \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qdir.h \
 		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qfileinfo.h
+
+release\uicontroller.obj: ..\UAVRouter\uicontroller.cpp ..\UAVRouter\uicontroller.h \
+		ui_mainwindow.h
+
+release\GomoGemetry2D.obj: ..\UAVRouter\GomoGemetry2D.cpp ..\UAVRouter\GomoGeometry2D.h \
+		..\UAVRouter\niGeom\niGeom\math\niVector2d.h \
+		..\UAVRouter\niGeom\niGeom\math\niMath.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2d.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeom2dTypes.h \
+		..\UAVRouter\niGeom\niGeom\niTypes.h \
+		..\UAVRouter\niGeom\niGeom\niBlob.h \
+		..\UAVRouter\niGeom\niGeom\niArrayT.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2dFn.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomDef.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomMath2d.h \
+		..\UAVRouter\niGeom\niGeom\math\niMatrix22.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\QDebug \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qdebug.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qalgorithms.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qglobal.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qconfig.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qfeatures.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qsystemdetection.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qprocessordetection.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qcompilerdetection.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qglobalstatic.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qbasicatomic.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic_bootstrap.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qgenericatomic.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic_msvc.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic_integrity.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qoldbasicatomic.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic_vxworks.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic_power.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic_alpha.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic_armv7.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic_armv6.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic_armv5.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic_bfin.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic_ia64.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic_mips.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic_s390.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic_sh4a.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic_sparc.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic_x86.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic_cxx11.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic_gcc.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qatomic_unix.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qmutex.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qlogging.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qflags.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qtypeinfo.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qtypetraits.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qsysinfo.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qhash.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qchar.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qiterator.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qlist.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qrefcount.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qpair.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qmap.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qtextstream.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qiodevice.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qobject.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qobjectdefs.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qnamespace.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qobjectdefs_impl.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qstring.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qbytearray.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qarraydata.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qstringbuilder.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qcoreevent.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qscopedpointer.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qmetatype.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qvarlengtharray.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qcontainerfwd.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qisenum.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qobject_impl.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qlocale.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qvariant.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qstringlist.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qdatastream.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qregexp.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qstringmatcher.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qshareddata.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qvector.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qpoint.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qset.h \
+		D:\Qt\Qt5.2.0\5.2.0\msvc2010_opengl\include\QtCore\qcontiguouscache.h
+
+release\niPolygon2d.obj: ..\UAVRouter\niGeom\source\niPolygon2d.cpp ..\UAVRouter\niGeom\niGeom\geometry\niPolygon2d.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeom2dTypes.h \
+		..\UAVRouter\niGeom\niGeom\niTypes.h \
+		..\UAVRouter\niGeom\niGeom\niBlob.h \
+		..\UAVRouter\niGeom\niGeom\niArrayT.h \
+		..\UAVRouter\niGeom\niGeom\math\niMath.h \
+		..\UAVRouter\niGeom\niGeom\math\niVector2d.h
+
+release\niPolygon2dFn.obj: ..\UAVRouter\niGeom\source\niPolygon2dFn.cpp ..\UAVRouter\niGeom\niGeom\geometry\niPolygon2dFn.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomDef.h \
+		..\UAVRouter\niGeom\niGeom\niTypes.h \
+		..\UAVRouter\niGeom\niGeom\niBlob.h \
+		..\UAVRouter\niGeom\niGeom\niArrayT.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2d.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeom2dTypes.h \
+		..\UAVRouter\niGeom\niGeom\math\niMath.h \
+		..\UAVRouter\niGeom\niGeom\math\niVector2d.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niBBox2d.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomMath2d.h \
+		..\UAVRouter\niGeom\niGeom\math\niMatrix22.h
+
+release\niGeomMath2d.obj: ..\UAVRouter\niGeom\source\niGeomMath2d.cpp ..\UAVRouter\niGeom\niGeom\geometry\niGeomMath2d.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeomDef.h \
+		..\UAVRouter\niGeom\niGeom\niTypes.h \
+		..\UAVRouter\niGeom\niGeom\niBlob.h \
+		..\UAVRouter\niGeom\niGeom\niArrayT.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niGeom2dTypes.h \
+		..\UAVRouter\niGeom\niGeom\math\niMath.h \
+		..\UAVRouter\niGeom\niGeom\math\niVector2d.h \
+		..\UAVRouter\niGeom\niGeom\math\niMatrix22.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niBBox2d.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niLine2d.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niPolygon2d.h \
+		..\UAVRouter\niGeom\niGeom\geometry\niTriangle2d.h \
+		..\UAVRouter\niGeom\niGeom\geometry\tree\niBvhTree.h \
+		..\UAVRouter\niGeom\niGeom\geometry\tree\niTreeTypes.h
 
 release\moc_mainwindow.obj: release\moc_mainwindow.cpp 
 

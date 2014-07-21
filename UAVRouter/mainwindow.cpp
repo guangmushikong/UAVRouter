@@ -17,6 +17,8 @@
 
 #include <QXmlStreamReader>
 
+#include "uicontroller.h"
+
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -33,14 +35,18 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->editPixelsize->setReadOnly(true);
 
     //load the default Camera parameters
-    QString focus("55");
-    QString h("7760");
-    QString w("10328");
-    QString pixel("5.2");
-    ui->editFocus->setText(focus);
-    ui->editCamHeight->setText(h);
-    ui->editCamWidth->setText(w);
-    ui->editPixelsize->setText(pixel);
+//    QString focus("55");
+//    QString h("7760");
+//    QString w("10328");
+//    QString pixel("5.2");
+//    ui->editFocus->setText(focus);
+//    ui->editCamHeight->setText(h);
+//    ui->editCamWidth->setText(w);
+//    ui->editPixelsize->setText(pixel);
+
+    UIController * myUiController = UIController::GetUIControllerPtr();
+    myUiController->AddMainWindow(ui);
+    myUiController->LoadDefaultDesignParameters2UI();
 
     ptrChild_TV = NULL;
     setInputKmlFile.clear();
@@ -163,6 +169,7 @@ void MainWindow::on_toolButton_Region_clicked()
                     ".",
                     "KML (*.kml *.KML)");
     dlg.setFileMode(QFileDialog::ExistingFiles);
+
     if(dlg.exec() == QFileDialog::Accepted)
     {
         QStringList slist = dlg.selectedFiles();
