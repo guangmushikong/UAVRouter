@@ -12,10 +12,11 @@ child_tv::child_tv(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    // set the child dialog's appearance
     this->setFixedSize(this->width(), this->height());
-
-    this->setDeletedRows.clear();
-    this->setAddedRows.clear();
+    Qt::WindowFlags type = Qt::Dialog;
+    type |= Qt::WindowMinimizeButtonHint;
+    this->setWindowFlags(type);
 
     ptrmodel = new QStandardItemModel();
     ptrmodel->setColumnCount(2);
@@ -29,7 +30,7 @@ child_tv::child_tv(QWidget *parent) :
 
     ptrMainDlg = (MainWindow*)parent;
 
-    reDisplyOnTabView();
+    ReDisplyOnTabView();
     strCurPath = ".";
 }
 
@@ -63,15 +64,14 @@ QString child_tv::getFileNameFromPath(QString strPath)
 // delete selected item in tableview
 void child_tv::on_pushButton_clicked()
 {
-    addToSrc();
-
     QItemSelectionModel* selections = ui->tableView->selectionModel();
     QModelIndexList selected = selections->selectedRows();
 
     std::set<int> setRows;
     foreach (QModelIndex idx, selected) {
         setRows.insert(idx.row());
-        setDeletedRows.insert(ptrmodel->data(ptrmodel->index(idx.row(), 1)).toString());
+        QString strSelected = ptrmodel->data(ptrmodel->index(idx.row(), 1)).toString();
+        ptrMainDlg->listInputKmlFile.remove(strSelected);
     }
 
     for(std::set<int>::reverse_iterator riter = setRows.rbegin();
@@ -84,8 +84,6 @@ void child_tv::on_pushButton_clicked()
 // add selected files and display the files in tableview
 void child_tv::on_pushButton_2_clicked()
 {
-    deleteFromSrc();
-
     QFileDialog dlg(this,
                     "Choose Flight Region Defination File(s)...",
                     strCurPath,
@@ -97,11 +95,12 @@ void child_tv::on_pushButton_2_clicked()
         QStringList slist = dlg.selectedFiles();
         for(int i=0; i<slist.size(); ++i)
         {
-            setAddedRows.insert(slist.at(i));
-
-            std::set<QString>::iterator iterFind = ptrMainDlg->setInputKmlFile.find(slist.at(i));
-            if(iterFind == ptrMainDlg->setInputKmlFile.end())
+            //setAddedRows.insert(slist.at(i));
+            is_exist checker(ptrMainDlg->listInputKmlFile);
+            if(!checker(slist.at(i)))
             {
+                ptrMainDlg->listInputKmlFile.push_back(slist.at(i));
+
                 QStandardItem* ptrItem1 = new QStandardItem(getFileNameFromPath(slist.at(i)));
                 QStandardItem* ptrItem2 = new QStandardItem(slist.at(i));
                 QList<QStandardItem*> item;
@@ -112,30 +111,15 @@ void child_tv::on_pushButton_2_clicked()
     }
 }
 
-void child_tv::on_buttonBox_rejected()
-{
-    setDeletedRows.clear();
-    setAddedRows.clear();
-}
-
-void child_tv::on_buttonBox_accepted()
-{
-    deleteFromSrc();
-    addToSrc();
-
-    setDeletedRows.clear();
-    setAddedRows.clear();
-}
-
-void child_tv::reDisplyOnTabView()
+void child_tv::ReDisplyOnTabView()
 {
     if(0 < ptrmodel->rowCount())
     {
         ptrmodel->removeRows(0, ptrmodel->rowCount());
     }
 
-    for(std::set<QString>::iterator iter = ptrMainDlg->setInputKmlFile.begin();
-        iter != ptrMainDlg->setInputKmlFile.end(); ++iter)
+    for(std::list<QString>::iterator iter = ptrMainDlg->listInputKmlFile.begin();
+        iter != ptrMainDlg->listInputKmlFile.end(); ++iter)
     {
         QStandardItem* ptrItem1 = new QStandardItem(getFileNameFromPath(*iter));
         QStandardItem* ptrItem2 = new QStandardItem(*iter);
@@ -147,29 +131,54 @@ void child_tv::reDisplyOnTabView()
     ui->tableView->show();
 }
 
-void child_tv::deleteFromSrc()
+void child_tv::on_pushButton_3_clicked()
 {
-    if(0 >= setDeletedRows.size())
-        return;
-
-    for(std::set<QString>::iterator iter = setDeletedRows.begin();
-        iter != setDeletedRows.end(); iter++)
+    QItemSelectionModel* selections = ui->tableView->selectionModel();
+    QModelIndexList selected = selections->selectedRows();
+    if(1 < selected.size() || 0 == selected.size())
     {
-        if(ptrMainDlg->setInputKmlFile.find(*iter) != ptrMainDlg->setInputKmlFile.end())
+        QMessageBox::warning(this,
+                             "Warning",
+                             "please select one row...",
+                             QMessageBox::Ok|QMessageBox::Cancel,
+                             QMessageBox::Ok);
+        return;
+    }
+
+    QModelIndex idx = selected.at(0);
+
+    //selected file dialog
+    QFileDialog dlg(this,
+                    "Choose Flight Region Defination File(s)...",
+                    strCurPath,
+                    "KML (*.kml *.KML)");
+    dlg.setFileMode(QFileDialog::ExistingFiles);
+    if(dlg.exec() == QFileDialog::Accepted)
+    {
+        strCurPath = dlg.directory().path();
+        QStringList slist = dlg.selectedFiles();
+        for(int i=0; i<slist.size(); ++i)
         {
-            ptrMainDlg->setInputKmlFile.erase(ptrMainDlg->setInputKmlFile.find(*iter));
+            QStandardItem* ptrItem1 = new QStandardItem(getFileNameFromPath(slist.at(i)));
+            QStandardItem* ptrItem2 = new QStandardItem(slist.at(i));
+            QList<QStandardItem*> item;
+            item<<ptrItem1<<ptrItem2;
+            //ptrMainDlg->listInputKmlFile.insert()
+            ptrmodel->insertRow(idx.row(), item);
         }
     }
+
+    // keep in line with the child dialog
+    ptrMainDlg->listInputKmlFile.clear();
+    for(int i=0; i<ptrmodel->rowCount(); ++i)
+    {
+        QString strPath = ptrmodel->data(ptrmodel->index(i, 1)).toString();
+        ptrMainDlg->listInputKmlFile.push_back(strPath);
+    }
+
 }
 
-void child_tv::addToSrc()
+void child_tv::on_pushButton_4_clicked()
 {
-    if(0 >= setAddedRows.size())
-        return;
-
-    for(std::set<QString>::iterator iter = setAddedRows.begin();
-        iter != setAddedRows.end(); ++iter)
-    {
-        ptrMainDlg->setInputKmlFile.insert(*iter);
-    }
+    this->hide();
 }

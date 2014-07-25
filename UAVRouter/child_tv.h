@@ -3,7 +3,7 @@
 
 #include <QDialog>
 #include <qstandarditemmodel.h>
-#include <set>
+#include <list>
 
 namespace Ui {
 class child_tv;
@@ -24,25 +24,51 @@ private slots:
 
     void on_pushButton_2_clicked();
 
-    void on_buttonBox_rejected();
+    void on_pushButton_3_clicked();
 
-    void on_buttonBox_accepted();
+    void on_pushButton_4_clicked();
 
 private:
     QString getFileNameFromPath(QString strPath);
-    void reDisplyOnTabView();
-    void deleteFromSrc();
-    void addToSrc();
+    void ReDisplyOnTabView();
 
     Ui::child_tv *ui;
     QStandardItemModel * ptrmodel;
-    std::set<QString> setDeletedRows;
-    std::set<QString> setAddedRows;
+    //std::set<QString> setDeletedRows;
+    //std::set<QString> setAddedRows;
     //std::set<QString> setInputFiles;
-
     MainWindow* ptrMainDlg;
-
     QString strCurPath;
+
+private:
+    // inner class
+    // to check the given string if exist in the base string list
+    class is_exist
+    {
+    public:
+        is_exist(const std::list<QString>& listStrs)
+        {
+            listBaseStrs = listStrs;
+        }
+        ~is_exist(){}
+        bool operator()(const QString& strVle)
+        {
+            bool bExistFlag = false;
+            for(std::list<QString>::iterator iter = listBaseStrs.begin();
+                iter != listBaseStrs.end(); ++iter)
+            {
+                QString strBaseStr = *iter;
+                if(strBaseStr.toLower() == strVle.toLower())
+                {
+                    bExistFlag = true;
+                    break;
+                }
+            }
+            return bExistFlag;
+        }
+    private:
+        std::list<QString> listBaseStrs;
+    };
 
 };
 

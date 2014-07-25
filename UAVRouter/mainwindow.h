@@ -41,14 +41,15 @@ private slots:
 
     void on_radioSinglePolygon_toggled(bool checked);
 
-    void on_toolButton_Region_2_clicked();
+    //void on_toolButton_Region_2_clicked();
 
 private:
     Ui::MainWindow *ui;
     child_tv *ptrChild_TV;
     bool fillInFlightParamRegionFiles();
 public:
-    std::set<QString> setInputKmlFile;
+    //std::set<QString> setInputKmlFile;
+    std::list<QString> listInputKmlFile;
 
 protected:
     Gomo::FlightRoute::FlightParameter m_flight_param;

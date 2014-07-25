@@ -49,7 +49,7 @@ MainWindow::MainWindow(QWidget *parent) :
     myUiController->LoadDefaultDesignParameters2UI();
 
     ptrChild_TV = NULL;
-    setInputKmlFile.clear();
+    listInputKmlFile.clear();
 }
 
 MainWindow::~MainWindow()
@@ -164,31 +164,34 @@ void MainWindow::on_toolButton_Region_clicked()
 
     }*/
 
-    QFileDialog dlg(this,
-                    "Choose Flight Region Defination File(s)...",
-                    ".",
-                    "KML (*.kml *.KML)");
-    dlg.setFileMode(QFileDialog::ExistingFiles);
-
-    if(dlg.exec() == QFileDialog::Accepted)
+    if(0 == listInputKmlFile.size())
     {
-        QStringList slist = dlg.selectedFiles();
-        setInputKmlFile.clear();
-        QString strFiles = "";
-        for(int i=0; i<slist.size(); ++i)
+        QFileDialog dlg(this,
+                        "Choose Flight Region Defination File(s)...",
+                        ".",
+                        "KML (*.kml *.KML)");
+        dlg.setFileMode(QFileDialog::ExistingFiles);
+        if(dlg.exec() == QFileDialog::Accepted)
         {
-            setInputKmlFile.insert(slist.at(i));
-            strFiles += slist.at(i);
-            if(i != (slist.size()-1))
+            QStringList slist = dlg.selectedFiles();
+            listInputKmlFile.clear();
+            for(int i=0; i<slist.size(); ++i)
             {
-                strFiles += "\n";
+                listInputKmlFile.push_back(slist.at(i));
             }
         }
-
-        ui->textRegionFile->setText(strFiles);
     }
 
+    // show the management dialog
+    if(NULL != ptrChild_TV)
+    {
+        delete ptrChild_TV;
+    }
 
+    ptrChild_TV = new child_tv(this);
+
+    ptrChild_TV->move(this->x() + this->frameSize().width(), this->y());
+    ptrChild_TV->show();
 }
 
 void MainWindow::on_cmdDesignStart_clicked()
@@ -335,39 +338,14 @@ void MainWindow::on_radioSinglePolygon_toggled(bool checked)
 
 }
 
-void MainWindow::on_toolButton_Region_2_clicked()
-{
-    if(NULL != ptrChild_TV)
-    {
-        delete ptrChild_TV;
-    }
-
-    ptrChild_TV = new child_tv(this);
-
-    ptrChild_TV->move(this->x() + this->frameSize().width(), this->y());
-    ptrChild_TV->show();
-
-    if(ptrChild_TV->exec() == QDialog::Accepted)
-    {
-        QString strFiles = "";
-        for(std::set<QString>::iterator iter = setInputKmlFile.begin();
-            iter != setInputKmlFile.end(); ++iter)
-        {
-            strFiles += *iter;
-            strFiles += "\n";
-        }
-        ui->textRegionFile->setText(strFiles);
-    }
-}
-
 bool MainWindow::fillInFlightParamRegionFiles()
 {
-    if(0 >= setInputKmlFile.size())
+    if(0 >= listInputKmlFile.size())
         return false;
 
     QStringList slist;
-    for(std::set<QString>::iterator iter = setInputKmlFile.begin();
-        iter != setInputKmlFile.end(); ++iter)
+    for(std::list<QString>::iterator iter = listInputKmlFile.begin();
+        iter != listInputKmlFile.end(); ++iter)
         slist.append(*iter);
 
     slist.sort(Qt::CaseInsensitive);
@@ -384,6 +362,7 @@ bool MainWindow::fillInFlightParamRegionFiles()
     }
     else
     {
+        m_flight_param.ClearFlightRegions();
         for(int i=0; i< slist.size(); i++)
         {
             std::string regionfilepath = slist.at(i).toStdString();
