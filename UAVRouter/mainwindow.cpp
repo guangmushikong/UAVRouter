@@ -29,10 +29,10 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->btn_unittest->hide();
 
-    ui->editFocus->setReadOnly(true);
-    ui->editCamHeight->setReadOnly(true);
-    ui->editCamWidth->setReadOnly(true);
-    ui->editPixelsize->setReadOnly(true);
+//    ui->editFocus->setReadOnly(true);
+//    ui->editCamHeight->setReadOnly(true);
+//    ui->editCamWidth->setReadOnly(true);
+//    ui->editPixelsize->setReadOnly(true);
 
     //load the default Camera parameters
 //    QString focus("55");
@@ -235,10 +235,10 @@ void MainWindow::on_cmdDesignStart_clicked()
     qDebug("route_desinger->AddOutPutFileName(outputBinary.toStdString());()");
 
 
-    route_desinger->AddOutPutFileName(outputBinary.toStdString());
+    //route_desinger->AddOutPutFileName(outputBinary.toStdString());
     route_desinger->AddOutPutFileName(outputText.toStdString());
     route_desinger->AddOutPutFileName(outputKML.toStdString());
-    route_desinger->AddOutPutFileName(outputGST.toStdString());
+    //route_desinger->AddOutPutFileName(outputGST.toStdString());
     qDebug("route_desinger->PerformRouteDesign()");
     route_desinger->PerformRouteDesign();
     route_desinger->OutputRouteFile();

@@ -251,29 +251,46 @@ void PolygonAreaFlightRouteDesign::DesignInTransformedCoords()
     streamdebug.str("");
 
     // create strips from left top of MBR of flight region        
-    double course_length = 0.0;
-
-    //Create the first strip
+    double course_length = 0.0;    
     int strip_seq =1;
-    float current_strip_y = leftTop.Y;
-    double strip_legth=CreateFirstStrip(strip_seq,current_strip_y,leftTop.X,rightBot.X);
-    course_length += strip_legth;
 
-    streamdebug<<"CreateFirstStrip: "<<std::endl;
-    qDebug(streamdebug.str().c_str());
-    streamdebug.str("");
+    float mbr_height =fabs(leftTop.Y - rightBot.Y);
+    bool isSingleStrip = fabs(m_cross_strip_distance) >  mbr_height*1.2;
 
-    //create the other strips based on the first
-    while (current_strip_y > rightBot.Y)
+    if(isSingleStrip)
     {
-        strip_seq++;
-        current_strip_y -= m_cross_strip_distance;
-        strip_legth=CreateNewStripBasedOnLastStrip(strip_seq,current_strip_y);
+        //create the single strip in the center of the y coordinate
+        //Create the first strip
+        float current_strip_y = (leftTop.Y+ rightBot.Y)/2.0;
+        double strip_legth=CreateFirstStrip(strip_seq,current_strip_y,leftTop.X,rightBot.X);
         course_length += strip_legth;
+
+        streamdebug<<"CreateSingleStrip: "<<std::endl;
+        qDebug(streamdebug.str().c_str());
+        streamdebug.str("");
+    }
+    else
+    {
+        //Create the first strip
+        float current_strip_y = leftTop.Y;
+        double strip_legth=CreateFirstStrip(strip_seq,current_strip_y,leftTop.X,rightBot.X);
+        course_length += strip_legth;
+
+        streamdebug<<"CreateFirstStrip: "<<std::endl;
+        qDebug(streamdebug.str().c_str());
+        streamdebug.str("");
+
+        //create the other strips based on the first
+        while (current_strip_y > rightBot.Y)
+        {
+            strip_seq++;
+            current_strip_y -= m_cross_strip_distance;
+            strip_legth=CreateNewStripBasedOnLastStrip(strip_seq,current_strip_y);
+            course_length += strip_legth;
+        }
+
     }
 
-    streamdebug<<"baseline: "<<m_baseline_length<<std::endl;
-    qDebug(streamdebug.str().c_str());
 
     // flip the flight points on the design plane according to the relative position of airport to lefttop
     //if isAirportleft==false, then flip the flight points on X axis

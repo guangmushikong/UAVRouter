@@ -219,3 +219,9 @@ build-UAVRouter-Desktop_Qt_5_2_1_MSVC2010_32bit-Debug/Makefile.Debug
 *.rc
 build-UAVRouter-Desktop_Qt_5_2_1_MSVC2010_32bit-Debug/ui_child_tv.h
 build-UAVRouter-Desktop_Qt_5_2_1_MSVC2010_32bit-Debug/ui_mainwindow.h
+build-UAVRouter-Desktop_Qt_5_2_1_MSVC2010_32bit-Debug/log.txt
+build-UAVRouter-Desktop_Qt_5_2_1_MSVC2010_32bit-Release/log.txt
+build-UAVRouter-Desktop_Qt_5_2_1_MSVC2010_32bit-Release/Makefile
+build-UAVRouter-Desktop_Qt_5_2_1_MSVC2010_32bit-Release/Makefile.Debug
+build-UAVRouter-Desktop_Qt_5_2_1_MSVC2010_32bit-Release/ui_child_tv.h
+build-UAVRouter-Desktop_Qt_5_2_1_MSVC2010_32bit-Release/ui_mainwindow.h
