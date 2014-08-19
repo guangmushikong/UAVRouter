@@ -3,6 +3,7 @@
 
 #include "ui_mainwindow.h"
 
+
 namespace Ui {
 class MainWindow;
 }
@@ -11,6 +12,8 @@ class UIController
 {
 protected:
     UIController();
+
+    ~UIController();
 
 
 public:

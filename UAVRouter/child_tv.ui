@@ -14,7 +14,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Management of input files</string>
+   <string>摄区文件管理...</string>
   </property>
   <widget class="QTableView" name="tableView">
    <property name="geometry">

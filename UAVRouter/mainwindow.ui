@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>621</width>
-    <height>435</height>
+    <height>412</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -391,7 +391,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>选择并管理摄取kml文件...</string>
+      <string>选择并管理摄区kml文件...</string>
      </property>
     </widget>
    </widget>
@@ -474,7 +474,7 @@
     <property name="title">
      <string>帮助</string>
     </property>
-    <addaction name="action_4"/>
+    <addaction name="menuAboutUs"/>
    </widget>
    <addaction name="menu"/>
   </widget>
@@ -487,7 +487,7 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="action_4">
+  <action name="menuAboutUs">
    <property name="text">
     <string>关于我们</string>
    </property>

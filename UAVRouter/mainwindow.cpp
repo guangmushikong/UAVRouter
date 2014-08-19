@@ -29,10 +29,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->btn_unittest->hide();
 
-//    ui->editFocus->setReadOnly(true);
-//    ui->editCamHeight->setReadOnly(true);
-//    ui->editCamWidth->setReadOnly(true);
-//    ui->editPixelsize->setReadOnly(true);
+
 
     //load the default Camera parameters
 //    QString focus("55");
@@ -48,6 +45,7 @@ MainWindow::MainWindow(QWidget *parent) :
     myUiController->AddMainWindow(ui);
     myUiController->LoadDefaultDesignParameters2UI();
 
+    m_pCopyRightDialog=NULL;
     ptrChild_TV = NULL;
     listInputKmlFile.clear();
 }
@@ -337,6 +335,15 @@ void MainWindow::on_radioSinglePolygon_toggled(bool checked)
 {
 
 }
+
+void MainWindow::on_menuAboutUs_triggered()
+{
+    m_pCopyRightDialog = new CopyRightDialog(this);
+
+    m_pCopyRightDialog->show();
+
+}
+
 
 bool MainWindow::fillInFlightParamRegionFiles()
 {

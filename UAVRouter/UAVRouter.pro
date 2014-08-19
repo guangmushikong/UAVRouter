@@ -40,7 +40,8 @@ SOURCES += main.cpp\
     GomoGemetry2D.cpp \
     ./niGeom/source/niPolygon2d.cpp \
     ./niGeom/source/niPolygon2dFn.cpp \
-    ./niGeom/source/niGeomMath2d.cpp
+    ./niGeom/source/niGeomMath2d.cpp \
+    copyrightdialog.cpp
 
 HEADERS  += mainwindow.h \
     flightroutedesign.h \
@@ -59,7 +60,9 @@ HEADERS  += mainwindow.h \
     multiregiondesigner.h \
     flightparameterinput.h \
     child_tv.h \
-    uicontroller.h
+    uicontroller.h \
+    copyrightdialog.h
 
 FORMS    += mainwindow.ui \
-    child_tv.ui
+    child_tv.ui \
+    copyrightdialog.ui
