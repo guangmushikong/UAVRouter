@@ -320,9 +320,9 @@
    <widget class="QTextEdit" name="textOutputFile">
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>350</x>
       <y>270</y>
-      <width>241</width>
+      <width>251</width>
       <height>21</height>
      </rect>
     </property>
@@ -333,7 +333,7 @@
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>350</x>
       <y>250</y>
       <width>171</width>
       <height>16</height>
@@ -346,9 +346,9 @@
    <widget class="QToolButton" name="toolButtonOutputSelect">
     <property name="geometry">
      <rect>
-      <x>470</x>
+      <x>560</x>
       <y>250</y>
-      <width>37</width>
+      <width>40</width>
       <height>18</height>
      </rect>
     </property>
@@ -371,9 +371,9 @@
     <widget class="QToolButton" name="toolButton_Region">
      <property name="geometry">
       <rect>
-       <x>210</x>
+       <x>220</x>
        <y>40</y>
-       <width>37</width>
+       <width>40</width>
        <height>18</height>
       </rect>
      </property>
@@ -436,9 +436,9 @@
     <widget class="QToolButton" name="toolButtonAirport">
      <property name="geometry">
       <rect>
-       <x>130</x>
+       <x>220</x>
        <y>20</y>
-       <width>37</width>
+       <width>40</width>
        <height>18</height>
       </rect>
      </property>

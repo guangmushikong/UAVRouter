@@ -250,7 +250,7 @@ void MainWindow::on_toolButtonOutputSelect_clicked()
 {
     QString s = QFileDialog::getSaveFileName(this,"Choose a Flight Route Design File...",
                         ".",
-                        "ght, bht(*.ght(text file) *.bht(binary file))"
+                        "ght, kml(*.ght(text file) *.kml(KML file))"
                         );
 
     ui->textOutputFile->setText(s);

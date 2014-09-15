@@ -378,9 +378,7 @@ namespace FlightRoute {
         if(encrypt==false)
         {
             out_stream<<SPACE<<__latitude
-                      <<SPACE<<__longitude
-                      <<SPACE<<height_int
-                      <<SPACE<<pt_class<<"\n";
+                      <<SPACE<<__longitude;
         }
         else
         {
@@ -389,11 +387,17 @@ namespace FlightRoute {
             coordoutput.SetPointIdForEncryptionStep3A(stream_pointid.str());
             coordoutput.SetAsDouble(__latitude,__longitude);
 
-            out_stream<<SPACE<<coordoutput.GetAsEncryptString()
-                      <<SPACE<<height_int
-                      <<SPACE<<pt_class<<"\n";
-
+            out_stream<<SPACE<<coordoutput.GetAsEncryptString();
         }
+
+
+        //output the height and pt_class
+        state.copyfmt(out_stream); // save current formatting
+        out_stream << std::setw(4)
+                     << std::setfill('0')
+                     <<SPACE<<height_int
+                     <<SPACE<<pt_class<<"\n";
+        out_stream.copyfmt(state); // restore previous formatting
 
 
     }
