@@ -69,8 +69,7 @@ void MainWindow::on_toolButtonAirport_clicked()
         if(s.length() == 0)
         {
             QMessageBox::information(NULL, tr("Path error!"), tr("You didn't select any files."));
-            ui->labelAirportLocation->setText(s);
-        }
+          }
         else
         {
             std::auto_ptr<OGRGeometry> airport_geom_ptr =COGRGeometryFileReader::GetFirstOGRPointFromFile(s.toStdString());
@@ -86,10 +85,19 @@ void MainWindow::on_toolButtonAirport_clicked()
             QString airportfilebasename=fi.baseName();
             m_flight_param.airport.SetName(airportfilebasename.toStdString());
 
-            char *location=NULL;
-            airportLoc.exportToWkt(&location);
-            QString strloc(location);
-            ui->labelAirportLocation->setText(strloc);
+//            char *location=NULL;
+//            airportLoc.exportToWkt(&location);
+//            QString strloc(location);
+//            ui->labelAirportLocation->setText(strloc);
+
+            QString sLat= QString::number(airportLoc.getY(),'f',6);
+            ui->editAirportLatitude->setText(sLat);
+            QString sLon= QString::number(airportLoc.getX(),'f',6);
+            ui->editAirportLongitude->setText(sLon);
+            QString sAlt= QString::number(airportLoc.getZ(),'f',6);
+            ui->editAirportAltitude->setText(sAlt);
+
+
             //QMessageBox::information(NULL, tr("Path"), tr("You selected ") + s);
         }
 
@@ -218,6 +226,14 @@ void MainWindow::on_cmdDesignStart_clicked()
     m_flight_param.overlap=ui->editoverlaprate->text().toDouble()/100.0;
     m_flight_param.overlap_crossStrip=ui->editOverlapSide->text().toDouble()/100.0;
     m_flight_param.RedudantBaselines=ui->editRedudantBaseline->text().toInt();
+
+    //Airport
+    double x_airport,y_airport,z_airport;
+    x_airport = ui->editAirportLongitude->text().toDouble();
+    y_airport = ui->editAirportLatitude->text().toDouble();
+    z_airport = ui->editAirportAltitude->text().toDouble();
+    OGRPoint airportLoc(x_airport,y_airport,z_airport);
+    m_flight_param.airport.SetLocation(airportLoc);
 
 
     //m_flight_param.OutputFilePathname=ui->textOutputFile->toPlainText().toStdString();

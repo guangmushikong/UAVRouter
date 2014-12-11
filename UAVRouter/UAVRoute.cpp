@@ -375,6 +375,8 @@ namespace FlightRoute {
 
         int height_int = __height +0.5;
 
+        out_stream.precision(COORDINATE_DEGREE_PRECISION);
+
         if(encrypt==false)
         {
             out_stream<<SPACE<<__latitude
@@ -393,11 +395,14 @@ namespace FlightRoute {
 
         //output the height and pt_class
         state.copyfmt(out_stream); // save current formatting
-        out_stream << std::setw(4)
-                     << std::setfill('0')
-                     <<SPACE<<height_int
-                     <<SPACE<<pt_class<<"\n";
+        out_stream <<SPACE
+                  << std::setw(4)
+                  << std::setfill('0')
+                  <<height_int;
         out_stream.copyfmt(state); // restore previous formatting
+
+        //point class
+        out_stream <<SPACE<<pt_class<<"\n";
 
 
     }

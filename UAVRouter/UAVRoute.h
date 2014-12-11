@@ -267,8 +267,17 @@ namespace FlightRoute {
                 //second line
                 out_stream<<airport_upper
                           <<SPACE<<airport_latitude
-                          <<SPACE<<airport_longitude
-                         <<SPACE<<intAirportHeight<<"\n";
+                          <<SPACE<<airport_longitude;
+
+                //output the height
+                ios state(nullptr);
+                state.copyfmt(out_stream); // save current formatting
+                out_stream <<SPACE
+                          << std::setw(4)
+                          << std::setfill('0')
+                          <<intAirportHeight
+                          <<"\n";
+                out_stream.copyfmt(state); // restore previous formatting
             }
             else
             {

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>621</width>
-    <height>412</height>
+    <height>471</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -53,7 +53,7 @@
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>50</y>
+       <y>80</y>
        <width>141</width>
        <height>16</height>
       </rect>
@@ -86,7 +86,7 @@
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>80</y>
+       <y>50</y>
        <width>131</width>
        <height>16</height>
       </rect>
@@ -122,9 +122,9 @@
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>10</y>
-      <width>271</width>
+      <x>10</x>
+      <y>350</y>
+      <width>311</width>
       <height>51</height>
      </rect>
     </property>
@@ -147,7 +147,7 @@
     <widget class="QLineEdit" name="editDatumHeight">
      <property name="geometry">
       <rect>
-       <x>130</x>
+       <x>170</x>
        <y>20</y>
        <width>131</width>
        <height>20</height>
@@ -232,7 +232,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>设计航高  (m)</string>
+      <string>设计航高-海拔高  (m)</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="editFlightHeight">
@@ -258,7 +258,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>航向重叠率 (100%)</string>
+      <string>航向重叠率 (%)</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -271,7 +271,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>旁向重叠率 (100%)</string>
+      <string>旁向重叠率 (%)</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="editoverlaprate">
@@ -304,8 +304,8 @@
    <widget class="QCommandLinkButton" name="cmdDesignStart">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>300</y>
+      <x>440</x>
+      <y>360</y>
       <width>172</width>
       <height>41</height>
      </rect>
@@ -321,7 +321,7 @@
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>270</y>
+      <y>290</y>
       <width>251</width>
       <height>21</height>
      </rect>
@@ -334,7 +334,7 @@
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>250</y>
+      <y>260</y>
       <width>171</width>
       <height>16</height>
      </rect>
@@ -347,7 +347,7 @@
     <property name="geometry">
      <rect>
       <x>560</x>
-      <y>250</y>
+      <y>270</y>
       <width>40</width>
       <height>18</height>
      </rect>
@@ -360,9 +360,9 @@
     <property name="geometry">
      <rect>
       <x>340</x>
-      <y>140</y>
+      <y>10</y>
       <width>271</width>
-      <height>101</height>
+      <height>61</height>
      </rect>
     </property>
     <property name="title">
@@ -372,7 +372,7 @@
      <property name="geometry">
       <rect>
        <x>220</x>
-       <y>40</y>
+       <y>30</y>
        <width>40</width>
        <height>18</height>
       </rect>
@@ -385,7 +385,7 @@
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>40</y>
+       <y>30</y>
        <width>151</width>
        <height>16</height>
       </rect>
@@ -399,7 +399,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>350</y>
+      <y>430</y>
       <width>71</width>
       <height>21</height>
      </rect>
@@ -412,9 +412,9 @@
     <property name="geometry">
      <rect>
       <x>340</x>
-      <y>70</y>
+      <y>80</y>
       <width>271</width>
-      <height>61</height>
+      <height>151</height>
      </rect>
     </property>
     <property name="title">
@@ -424,7 +424,7 @@
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>20</y>
+       <y>30</y>
        <width>121</width>
        <height>16</height>
       </rect>
@@ -437,7 +437,7 @@
      <property name="geometry">
       <rect>
        <x>220</x>
-       <y>20</y>
+       <y>30</y>
        <width>40</width>
        <height>18</height>
       </rect>
@@ -446,17 +446,73 @@
       <string>...</string>
      </property>
     </widget>
-    <widget class="QLabel" name="labelAirportLocation">
+    <widget class="QLineEdit" name="editAirportLongitude">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>60</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="editAirportLatitude">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>90</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="editAirportAltitude">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>120</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>40</y>
-       <width>241</width>
+       <y>60</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>经度</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>纬度</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>81</width>
        <height>16</height>
       </rect>
      </property>
      <property name="text">
-      <string>...</string>
+      <string>海拔高 (m)</string>
      </property>
     </widget>
    </widget>
