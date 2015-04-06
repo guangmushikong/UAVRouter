@@ -21,6 +21,8 @@ PolygonOrientation2D::PolygonOrientation2D( const Point2DArray pts)
     ni::geometry::niPolygon2dFn polyFunc(polygon);
     m_orignal_area = polyFunc.Area();
 
+    m_extended_baseline = 200.0;// 200 meters as default
+
 }
 
 
@@ -188,7 +190,7 @@ bool PolygonOrientation2D::PolygonRoationExperiment(const double & angle,
 
     MBR2D(rotated_vetices,lt,rb);
 
-    mbr_area_after_rotation = fabs(lt.X-rb.X)*fabs(lt.Y-rb.Y);
+    mbr_area_after_rotation = (fabs(lt.X-rb.X)+m_extended_baseline)*fabs(lt.Y-rb.Y);
 
     return true;
 

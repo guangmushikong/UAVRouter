@@ -69,6 +69,8 @@ bool PolygonAreaFlightRouteDesign::CalculatePolygonOrientaion(const Point2DArray
 
     center = Polygon_orien.GetCenter();
 
+    Polygon_orien.SetExtendBaseLineLength(m_baseline_length*(m_parameter.RedudantBaselines+1)*2);
+
     return Polygon_orien.GetOptimalOrientation(angle);
 
 
@@ -281,7 +283,7 @@ void PolygonAreaFlightRouteDesign::DesignInTransformedCoords()
         streamdebug.str("");
 
         //create the other strips based on the first
-        while (current_strip_y > rightBot.Y)
+        while (current_strip_y > (rightBot.Y + m_cross_strip_distance/2)) // modified 2015-04-06, to reduce the last reductant line
         {
             strip_seq++;
             current_strip_y -= m_cross_strip_distance;
@@ -615,7 +617,5 @@ void PolygonAreaFlightRouteDesign::OutputRouteFile()
     qDebug("PolygonAreaFlightRouteDesign::OutputRouteFile()");
 
     FlightRouteDesign::OutputRouteFile();
-
-
 
 }

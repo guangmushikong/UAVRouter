@@ -218,6 +218,11 @@ namespace Geometry2D {
         Point2D GetCenter();
         bool GetOptimalOrientation(double & optimal_angle);
 
+        void SetExtendBaseLineLength(const double & baseline)
+        {
+            m_extended_baseline = baseline;
+        };
+
     protected:
         bool Centralization();
         bool GetOrientation_ConvexHull(OptimalOrientationInfo& info);
@@ -237,6 +242,8 @@ namespace Geometry2D {
         Point2DArray m_polygon_centralized;
 
         std::map<double /* difference of __rotated_mbr_area and m_orignal_area */,OptimalOrientationInfo> m_model_orienation;
+
+        double m_extended_baseline;
 
     };
 

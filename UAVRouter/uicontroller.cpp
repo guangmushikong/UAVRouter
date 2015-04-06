@@ -27,10 +27,10 @@ void UIController::LoadDefaultDesignParameters2UI()
     m_ui_main_window->editPixelsize->setText(pixel);
 
 //    //set the camera fixed for specific customer
-//    m_ui_main_window->editFocus->setReadOnly(true);
-//    m_ui_main_window->editCamHeight->setReadOnly(true);
-//    m_ui_main_window->editCamWidth->setReadOnly(true);
-//    m_ui_main_window->editPixelsize->setReadOnly(true);
+    m_ui_main_window->editFocus->setReadOnly(true);
+    m_ui_main_window->editCamHeight->setReadOnly(true);
+    m_ui_main_window->editCamWidth->setReadOnly(true);
+    m_ui_main_window->editPixelsize->setReadOnly(true);
 
     //flight info
     QString datumHeight("0.0");
