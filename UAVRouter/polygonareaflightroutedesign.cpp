@@ -361,18 +361,23 @@ qDebug("//exposure points\n");
             id++;
         }
 
+        double firs_redudant = current_x;
+
         //exposure points for reductant baselines:
         for (int i=0; i<m_parameter.RedudantBaselines ; i++)
         {
-            x_redudant = current_x + m_baseline_length*i;
+            x_redudant = firs_redudant + m_baseline_length*i;
             CreateNewFilghtPoint(strip_id,id,FLIGTH_POINT_TYPE_EXPOSURE ,x_redudant,current_strip_y);
             id++;
-
-            current_x = x_redudant;
         }
 qDebug("//B2:exit\n");
         //B2:exit
-        double x_exit=current_x+m_baseline_length;
+        double x_exit=firs_redudant;
+        if (m_parameter.RedudantBaselines!=0)
+        {
+            x_exit = firs_redudant+m_baseline_length;
+        }
+
         CreateNewFilghtPoint(strip_id,0,(enumFlightPointType)(FLIGTH_POINT_TYPE_ETRANCE_EXIT | FLIGTH_POINT_TYPE_B_POINT_MASK),x_exit,current_strip_y);
 
 
