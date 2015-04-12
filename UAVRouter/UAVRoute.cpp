@@ -379,8 +379,14 @@ namespace FlightRoute {
 
         if(encrypt==false)
         {
-            out_stream<<SPACE<<__latitude
-                      <<SPACE<<__longitude;
+            out_stream<<SPACE<<__latitude<<SPACE;
+
+            //output the height and pt_class
+            state.copyfmt(out_stream); // save current formatting
+            out_stream << std::setw(COORDINATE_DEGREE_PRECISION+4)
+                      << std::setfill('0')
+                      <<__longitude;
+            out_stream.copyfmt(state); // restore previous formatting
         }
         else
         {
